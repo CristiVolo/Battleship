@@ -1,1 +1,1835 @@
 /* You can add global styles to this file, and also import other style files */
+.mediaViewInfo {
+    --web-view-name: Home-Carrierselected-SignIN;
+    --web-view-id: Home-Carrierselected-SignIN;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: Home-Carrierselected-SignIN;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#Home-Carrierselected-SignIN {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background: linear-gradient(180deg, rgba(49,49,50,1) 0%, rgba(22,22,24,1) 100%);
+    overflow: hidden;
+    --web-view-name: Home-Carrierselected-SignIN;
+    --web-view-id: Home-Carrierselected-SignIN;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+#Rectangle_6_bd {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_6_bd {
+    display: none;
+    position: absolute;
+    overflow: visible;
+    width: 442px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+}
+#Image_BattleSHIP_bd {
+    display: none;
+    position: absolute;
+    width: 1923px;
+    height: 1080px;
+    left: -1477px;
+    top: 0px;
+    overflow: visible;
+}
+#Carrier_SHIP_NAME_bd {
+    left: 1156px;
+    top: 240px;
+    position: absolute;
+    overflow: visible;
+    width: 445px;
+    height: 176px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: rgba(255,255,255,1);
+    text-transform: capitalize;
+}
+#Margin_bd {
+    position: absolute;
+    width: 3px;
+    height: 1079.5px;
+    left: 445.5px;
+    top: 0.5px;
+    overflow: visible;
+}
+#Line_1_bd {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_1_bd {
+    overflow: visible;
+    position: absolute;
+    width: 4px;
+    height: 1079.503px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Line_5_bd {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_5_bd {
+    overflow: visible;
+    position: absolute;
+    width: 4px;
+    height: 1079.503px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#VersionLayer_OPTIONAL_bd {
+    position: absolute;
+    width: 278px;
+    height: 72px;
+    left: 597px;
+    top: 285px;
+    overflow: visible;
+}
+#ID01_bed {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 224px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -25.5px;
+    text-align: left;
+    font-family: Bauhaus 93;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255,255,255,1);
+}
+#Line_3_bea {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_3_bea {
+    overflow: visible;
+    position: absolute;
+    width: 278.004px;
+    height: 2px;
+    left: 0px;
+    top: 32.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Line_4_beb {
+    fill: transparent;
+    stroke: rgba(239,200,98,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_4_beb {
+    overflow: visible;
+    position: absolute;
+    width: 7.5px;
+    height: 1px;
+    left: 0px;
+    top: 32.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#The_seagoing_airbase_bec {
+    left: 0px;
+    top: 50px;
+    position: absolute;
+    overflow: visible;
+    width: 155px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -28px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgba(255,255,255,1);
+}
+#ID01_bed {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 224px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -25.5px;
+    text-align: left;
+    font-family: Bauhaus 93;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255,255,255,1);
+}
+#Line_7_bee {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_7_bee {
+    overflow: visible;
+    position: absolute;
+    width: 278.004px;
+    height: 2px;
+    left: 0px;
+    top: 32.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Line_8_bef {
+    fill: transparent;
+    stroke: rgba(239,200,98,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_8_bef {
+    overflow: visible;
+    position: absolute;
+    width: 7.5px;
+    height: 1px;
+    left: 0px;
+    top: 32.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Ships_beg {
+    position: absolute;
+    width: 3911px;
+    height: 672px;
+    left: 437px;
+    top: 408px;
+    overflow: visible;
+}
+#Cruiser_SHIP_TRANSITION2_beh {
+    position: absolute;
+    width: 367px;
+    height: 346px;
+    left: 3544px;
+    top: 326px;
+    overflow: visible;
+}
+#Rectangle_5_bei {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_5_bei {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 435.5px;
+    left: 0px;
+    top: 0px;
+}
+#Cruisers_are_often_called_upon_bej {
+    opacity: 0;
+    left: 34px;
+    top: 220px;
+    position: absolute;
+    overflow: visible;
+    width: 329px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_bek {
+    opacity: 0;
+    position: absolute;
+    width: 109.389px;
+    height: 18px;
+    left: 52px;
+    top: 328px;
+    overflow: visible;
+}
+#Know_more_bel {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bem {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 94.389px;
+    top: 3px;
+    overflow: visible;
+}
+#Path_5_ben {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5_ben {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6_beo {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6_beo {
+    overflow: visible;
+    position: absolute;
+    width: 14.093px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Cruiser_dim3_bep {
+    position: absolute;
+    width: 348px;
+    height: 209.075px;
+    left: 0px;
+    top: 10.925px;
+    overflow: visible;
+}
+#Battle_SHIP_TRANSITION2_beq {
+    position: absolute;
+    width: 367px;
+    height: 346px;
+    left: 3152px;
+    top: 326px;
+    overflow: visible;
+}
+#Rectangle_4_ber {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4_ber {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 435.5px;
+    left: 0px;
+    top: 0px;
+}
+#Battleship_dim4_bes {
+    position: absolute;
+    width: 348px;
+    height: 176px;
+    left: 0px;
+    top: 44px;
+    overflow: visible;
+}
+#Text_BattleShip_details_bet {
+    opacity: 0;
+    left: 34px;
+    top: 220px;
+    position: absolute;
+    overflow: visible;
+    width: 305px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_beu {
+    opacity: 0;
+    position: absolute;
+    width: 109.389px;
+    height: 18px;
+    left: 52px;
+    top: 328px;
+    overflow: visible;
+}
+#Know_more_bev {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bew {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 94.389px;
+    top: 3px;
+    overflow: visible;
+}
+#Path_5_bex {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5_bex {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6_bey {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6_bey {
+    overflow: visible;
+    position: absolute;
+    width: 14.092px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Carrier_SHIP_TRANSITION2_bez {
+    position: absolute;
+    width: 442px;
+    height: 378px;
+    left: 2666px;
+    top: 294px;
+    overflow: visible;
+}
+#Battle_SHIP_TRANSITION_be {
+    position: absolute;
+    width: 367px;
+    height: 346px;
+    left: 41px;
+    top: 32px;
+    overflow: visible;
+}
+#Rectangle_4_be {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4_be {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 435.5px;
+    left: 0px;
+    top: 0px;
+}
+#Text_BattleShip_details_be {
+    opacity: 0;
+    left: 34px;
+    top: 220px;
+    position: absolute;
+    overflow: visible;
+    width: 305px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_be {
+    opacity: 0;
+    position: absolute;
+    width: 109.389px;
+    height: 18px;
+    left: 52px;
+    top: 328px;
+    overflow: visible;
+}
+#Know_more_be {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_be {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 94.389px;
+    top: 3px;
+    overflow: visible;
+}
+#Path_5_be {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5_be {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6_be {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6_be {
+    overflow: visible;
+    position: absolute;
+    width: 14.092px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Text_Carrier_details_be {
+    opacity: 0;
+    left: 57px;
+    top: 256px;
+    position: absolute;
+    overflow: visible;
+    width: 386px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -5.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_bfa {
+    opacity: 0;
+    position: absolute;
+    width: 114.1px;
+    height: 18px;
+    left: 74px;
+    top: 360px;
+    overflow: visible;
+}
+#Know_more_bfa {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bfb {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 99.1px;
+    top: 0.5px;
+    overflow: visible;
+}
+#Path_3_bfc {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_3_bfc {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_4_bfd {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_4_bfd {
+    overflow: visible;
+    position: absolute;
+    width: 14.092px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Carrier_dim5_image_bfe {
+    position: absolute;
+    width: 408px;
+    height: 272px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Cruiser_SHIP_TRANSITION_bff {
+    position: absolute;
+    width: 367px;
+    height: 346px;
+    left: 1092px;
+    top: 302px;
+    overflow: visible;
+}
+#Rectangle_5_bfg {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_5_bfg {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 435.5px;
+    left: 0px;
+    top: 0px;
+}
+#Cruisers_are_often_called_upon_bfh {
+    opacity: 0;
+    left: 34px;
+    top: 220px;
+    position: absolute;
+    overflow: visible;
+    width: 329px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_bfi {
+    opacity: 0;
+    position: absolute;
+    width: 109.389px;
+    height: 18px;
+    left: 52px;
+    top: 328px;
+    overflow: visible;
+}
+#Know_more_bfj {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bfk {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 94.389px;
+    top: 3px;
+    overflow: visible;
+}
+#Path_5_bfl {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5_bfl {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6_bfm {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6_bfm {
+    overflow: visible;
+    position: absolute;
+    width: 14.092px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Cruiser_dim3_bfn {
+    position: absolute;
+    width: 348px;
+    height: 209.075px;
+    left: 0px;
+    top: 10.925px;
+    overflow: visible;
+}
+#Battle_SHIP_TRANSITION_bfo {
+    position: absolute;
+    width: 367px;
+    height: 346px;
+    left: 700px;
+    top: 302px;
+    overflow: visible;
+}
+#Rectangle_4_bfp {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_4_bfp {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 435.5px;
+    left: 0px;
+    top: 0px;
+}
+#Battleship_dim4_bfq {
+    position: absolute;
+    width: 348px;
+    height: 176px;
+    left: 0px;
+    top: 44px;
+    overflow: visible;
+}
+#Text_BattleShip_details_bfr {
+    opacity: 0;
+    left: 34px;
+    top: 220px;
+    position: absolute;
+    overflow: visible;
+    width: 305px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_bfs {
+    opacity: 0;
+    position: absolute;
+    width: 109.389px;
+    height: 18px;
+    left: 52px;
+    top: 328px;
+    overflow: visible;
+}
+#Know_more_bft {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bfu {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 94.389px;
+    top: 3px;
+    overflow: visible;
+}
+#Path_5_bfv {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5_bfv {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6_bfw {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6_bfw {
+    overflow: visible;
+    position: absolute;
+    width: 14.092px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Carrier_SHIP_TRANSITION_bfx {
+    position: absolute;
+    width: 670px;
+    height: 619px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    transition: all 1s ease-in-out;
+    --web-animation: fadein 1s ease-in-out;
+    --web-action-type: page;
+    --web-action-target: Home___Battleshipselected.html;
+    cursor: pointer;
+}
+#Carrier_BOX_bfy {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Carrier_BOX_bfy {
+    filter: drop-shadow(14px 100px 29px rgba(90, 90, 90, 0.059));
+    position: absolute;
+    overflow: visible;
+    width: 688px;
+    height: 670.5px;
+    left: 69px;
+    top: 92px;
+}
+#Carrier_dim5_image_bfz {
+    position: absolute;
+    width: 657px;
+    height: 438px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Text_Carrier_details_bf {
+    left: 154px;
+    top: 419px;
+    position: absolute;
+    overflow: visible;
+    width: 504px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_bf {
+    position: absolute;
+    width: 115.1px;
+    height: 19px;
+    left: 518px;
+    top: 566px;
+    overflow: visible;
+}
+#Know_more_bf {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 87px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bf {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 99.1px;
+    top: 1.5px;
+    overflow: visible;
+}
+#Path_3_bf {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_3_bf {
+    overflow: visible;
+    position: absolute;
+    width: 19px;
+    height: 3px;
+    left: 0px;
+    top: 8px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_4_bf {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_4_bf {
+    overflow: visible;
+    position: absolute;
+    width: 14.102px;
+    height: 20.204px;
+    left: 5.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Submarine_SHIP_TRANSITION2_bf {
+    position: absolute;
+    width: 427px;
+    height: 346px;
+    left: 1722px;
+    top: 326px;
+    overflow: visible;
+}
+#Rectangle_5_bf {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_5_bf {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 435.5px;
+    left: 60px;
+    top: 0px;
+}
+#Although_experimental_submarin_bf {
+    opacity: 0;
+    left: 94px;
+    top: 220px;
+    position: absolute;
+    overflow: visible;
+    width: 322px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_bga {
+    opacity: 0;
+    position: absolute;
+    width: 109.389px;
+    height: 18px;
+    left: 112px;
+    top: 328px;
+    overflow: visible;
+}
+#Know_more_bga {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bgb {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 94.389px;
+    top: 3px;
+    overflow: visible;
+}
+#Path_5_bgc {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5_bgc {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6_bgd {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6_bgd {
+    overflow: visible;
+    position: absolute;
+    width: 14.092px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Submarine_dim3_bge {
+    position: absolute;
+    width: 416px;
+    height: 277px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Destroyer_SHIP_TRANSITION2_bgf {
+    position: absolute;
+    width: 406px;
+    height: 360px;
+    left: 2208px;
+    top: 312px;
+    overflow: visible;
+}
+#Rectangle_5_bgg {
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_5_bgg {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 435.5px;
+    left: 39px;
+    top: 14px;
+}
+#Although_experimental_submarin_bgh {
+    opacity: 0;
+    left: 73px;
+    top: 234px;
+    position: absolute;
+    overflow: visible;
+    width: 330px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -3.5px;
+    text-align: left;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgba(90,90,90,1);
+}
+#KnowMore_bgi {
+    opacity: 0;
+    position: absolute;
+    width: 109.389px;
+    height: 18px;
+    left: 91px;
+    top: 342px;
+    overflow: visible;
+}
+#Know_more_bgj {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 82px;
+    white-space: nowrap;
+    line-height: 20px;
+    margin-top: -2.5px;
+    text-align: left;
+    font-family: SF Text;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(94,146,112,1);
+}
+#Icon_feather-arrow-right_bgk {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 94.389px;
+    top: 3px;
+    overflow: visible;
+}
+#Path_5_bgl {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_5_bgl {
+    overflow: visible;
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 0px;
+    top: 7.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Path_6_bgm {
+    fill: transparent;
+    stroke: rgba(94,146,112,1);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Path_6_bgm {
+    overflow: visible;
+    position: absolute;
+    width: 14.092px;
+    height: 19.185px;
+    left: 4.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Destroyer_dim2_bgn {
+    position: absolute;
+    width: 401px;
+    height: 267px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Nav_LEADERBOARD_bgo {
+    position: absolute;
+    width: 108px;
+    height: 25px;
+    left: 1421px;
+    top: 59px;
+    overflow: visible;
+}
+#Leader_Board_bgp {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 109px;
+    white-space: nowrap;
+    line-height: 59px;
+    margin-top: -21px;
+    text-align: left;
+    font-family: Source Han Sans JP;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(255,255,255,1);
+    text-transform: capitalize;
+}
+#Nav_CONTACT_bgq {
+    position: absolute;
+    width: 71px;
+    height: 25px;
+    left: 1584px;
+    top: 59px;
+    overflow: visible;
+}
+#Contact__bgr {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 72px;
+    white-space: nowrap;
+    line-height: 59px;
+    margin-top: -21px;
+    text-align: left;
+    font-family: Source Han Sans JP;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(255,255,255,1);
+    text-transform: capitalize;
+}
+#Nav_ABOUT_bgs {
+    position: absolute;
+    width: 71px;
+    height: 25px;
+    left: 1710px;
+    top: 59px;
+    overflow: visible;
+}
+#About_bgt {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 72px;
+    white-space: nowrap;
+    line-height: 59px;
+    margin-top: -21px;
+    text-align: left;
+    font-family: Source Han Sans JP;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(255,255,255,1);
+    text-transform: capitalize;
+}
+#NAV_TUTORIAL_bgu {
+    position: absolute;
+    width: 71px;
+    height: 25px;
+    left: 1295px;
+    top: 59px;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Tutorial_TheGrid.html;
+    cursor: pointer;
+}
+#Tutorial_bgv {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 72px;
+    white-space: nowrap;
+    line-height: 59px;
+    margin-top: -21px;
+    text-align: left;
+    font-family: Source Han Sans JP;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(255,255,255,1);
+    text-transform: capitalize;
+}
+#Home_bgw {
+    left: 1169px;
+    top: 59px;
+    position: absolute;
+    overflow: visible;
+    width: 72px;
+    white-space: nowrap;
+    line-height: 59px;
+    margin-top: -21px;
+    text-align: left;
+    font-family: Source Han Sans JP;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    color: rgba(239,200,98,1);
+    text-transform: capitalize;
+}
+#Line_6_bgx {
+    fill: transparent;
+    stroke: rgba(239,200,98,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_6_bgx {
+    overflow: visible;
+    position: absolute;
+    width: 48px;
+    height: 2px;
+    left: 1169px;
+    top: 113.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Line_10_bgy {
+    opacity: 0.31;
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_10_bgy {
+    display: none;
+    overflow: visible;
+    position: absolute;
+    width: 258.012px;
+    height: 3.5px;
+    left: 92px;
+    top: 564.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Line_11_bgz {
+    opacity: 0.31;
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_11_bgz {
+    display: none;
+    overflow: visible;
+    position: absolute;
+    width: 258.012px;
+    height: 3.5px;
+    left: 92px;
+    top: 635.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Login_LEFTPART_bg {
+    position: absolute;
+    width: 1405.5px;
+    height: 1165px;
+    left: -5px;
+    top: -85px;
+    overflow: visible;
+}
+#BATTLESHIP_Logo_bg {
+    position: absolute;
+    width: 442px;
+    height: 442px;
+    left: 5px;
+    top: 0px;
+    overflow: visible;
+}
+#imageedit_19_3329358286_bha {
+    position: absolute;
+    width: 442px;
+    height: 442px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#imageedit_19_3329358286_bha {
+    position: absolute;
+    width: 442px;
+    height: 442px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectangle_10_bha {
+    fill: url(#Rectangle_10_bha);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_10_bha {
+    position: absolute;
+    overflow: visible;
+    width: 258px;
+    height: 73px;
+    left: 94.57px;
+    top: 1008px;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Home_Carrierselected_AfterLogin.html;
+    cursor: pointer;
+}
+#Top_LOGIN_bg {
+    position: absolute;
+    width: 88px;
+    height: 32px;
+    left: 291.95px;
+    top: 395px;
+    overflow: visible;
+}
+#SIGN_UP_bg {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 89px;
+    white-space: nowrap;
+    transition: all 0s ease-out;
+    --web-animation: fadein 0s ease-out;
+    --web-action-type: page;
+    --web-action-target: Home_Carrierselected_SignUP.html;
+    cursor: pointer;
+    line-height: 73px;
+    margin-top: -24px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#Connect_bg {
+    left: 189.51px;
+    top: 1030px;
+    position: absolute;
+    overflow: visible;
+    width: 69px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -26.5px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+#Nickname_bg {
+    position: absolute;
+    width: 327px;
+    height: 36.5px;
+    left: 71.5px;
+    top: 627px;
+    overflow: visible;
+}
+#Line_14_bha {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_14_bha {
+    overflow: visible;
+    position: absolute;
+    width: 327.003px;
+    height: 2px;
+    left: 0px;
+    top: 35.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Icon_material-person_bhb {
+    fill: rgba(172,172,172,1);
+}
+.Icon_material-person_bhb {
+    overflow: visible;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 8.102px;
+    top: 1px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Nickname_bhc {
+    left: 72.5px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 85px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -26.5px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(172,172,172,1);
+}
+#Password_bhd {
+    position: absolute;
+    width: 327px;
+    height: 35.5px;
+    left: 71px;
+    top: 700px;
+    overflow: visible;
+}
+#Line_15_bhe {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_15_bhe {
+    overflow: visible;
+    position: absolute;
+    width: 327.003px;
+    height: 2px;
+    left: 0px;
+    top: 34.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Icon_ionic-ios-lock_bhf {
+    fill: rgba(172,172,172,1);
+}
+.Icon_ionic-ios-lock_bhf {
+    overflow: visible;
+    position: absolute;
+    width: 22.5px;
+    height: 29.251px;
+    left: 9.852px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Password_bhg {
+    left: 74.5px;
+    top: 5.251px;
+    position: absolute;
+    overflow: visible;
+    width: 81px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -26.5px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(172,172,172,1);
+}
+#Forgot_password_bhh {
+    opacity: 0.52;
+    left: 249px;
+    top: 754px;
+    position: absolute;
+    overflow: visible;
+    width: 151px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -26.5px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+#Shadow_bhi {
+    opacity: 0.15;
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Shadow_bhi {
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 724px;
+    left: 0px;
+    top: 441px;
+}
+#SignInSelection_bhj {
+    position: absolute;
+    width: 1400.5px;
+    height: 60.5px;
+    left: 5px;
+    top: 382px;
+    overflow: visible;
+}
+#Line_9_bhk {
+    fill: transparent;
+    stroke: rgba(239,200,98,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Line_9_bhk {
+    overflow: visible;
+    position: absolute;
+    width: 244.508px;
+    height: 3px;
+    left: 1156px;
+    top: 59.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Rectangle_9_bhl {
+    fill: rgba(239,200,98,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_9_bhl {
+    position: absolute;
+    overflow: visible;
+    width: 223px;
+    height: 6px;
+    left: 0px;
+    top: 54px;
+}
+#Signin_Grey {
+    position: absolute;
+    width: 222px;
+    height: 60px;
+    left: 1px;
+    top: 0px;
+    overflow: visible;
+}
+#SignINGrey {
+    fill: rgba(0,0,0,0);
+}
+.SignINGrey {
+    position: absolute;
+    overflow: visible;
+    width: 222px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+#SIGN_IN_bho {
+    left: 69.03px;
+    top: 13px;
+    position: absolute;
+    overflow: visible;
+    width: 83px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -24px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(255,255,255,1);
+}
+#SignUpGrey {
+    fill: rgba(255,255,255,0);
+}
+.SignUpGrey {
+    position: absolute;
+    overflow: visible;
+    width: 223px;
+    height: 60px;
+    left: 223px;
+    top: 0px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

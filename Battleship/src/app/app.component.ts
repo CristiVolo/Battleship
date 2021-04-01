@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  logo:string ="assets/images/imageedit_19_3329358286_i.png";
   title = 'Battleship';
-}
+ }
