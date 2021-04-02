@@ -48,10 +48,10 @@ section {
   
 
   .image_1{
-    
-    margin-left: -390px;
-    margin-top: -200px;
-    display: inline-block;
+
+    margin-left: -1160px;
+    margin-top: -500px;
+   
   }
 
   .ship-label{
@@ -80,14 +80,48 @@ section {
 .mat-tab-group{
   margin-left: -1100px;
   margin-top: 350px;
-  display: inline-block;
+  
   font-family: PT Sans;
   font-size: 25;
 
 }
-.mat-ink-bar{
-  background-color: #EFC862;
+
+ /*
+    Styles for tab label
+  */
+  
+  ::ng-deep .mat-tab-label {
+   /* min-width: 50px !important;
+    padding: 50px;
+    background-color: transparent;
+    */
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: transparent;
+  }
+
+  
+
+/*
+::ng-deep .mat-tab-label.mat-tab-label-active {
+    min-width: 40px !important;
+    padding: 30px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 3000;
 }
+*/
+
+/* Styles for the ink bar */
+::ng-deep .mat-ink-bar {
+  background-color:#EFC862 !important;}
+
+
+  
+  .tabright{
+    position: absolute;
+  }
+
   html{
     background: linear-gradient(to bottom, #313132 100%, #161618 100%);
   }
