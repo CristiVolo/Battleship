@@ -15,8 +15,6 @@ section {
     width: 1500px;
     position: fixed;
     top: 0;
-    
-
   }
   
   .example-button-row .mat-button-base {
@@ -50,8 +48,13 @@ section {
   .image_1{
 
     margin-left: -1160px;
-    margin-top: -500px;
+    margin-top: -100px;
    
+  }
+
+  .button-login{
+    margin-left: -1000px;
+    margin-top: 0px;
   }
 
   .ship-label{
@@ -98,6 +101,7 @@ section {
     font-size: 25px;
     color: #FFFFFF;
     background-color: transparent;
+   
   }
 
   
@@ -114,12 +118,45 @@ section {
 
 /* Styles for the ink bar */
 ::ng-deep .mat-ink-bar {
-  background-color:#EFC862 !important;}
-
+  background-color:#EFC862 !important;
+  
+}
 
   
-  .tabright{
+.form1{
+  padding-bottom: 30px;
+  height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+  
+ .form{
+   width: 50%;
+   position: relative;
+   height: 50px;
+
+ }
+
+ .form input{
+   width: 100%;
+   height: 100%;
+   color: #595f6e;
+   padding-top: 20px;
+   border: none;
+  }
+
+  .form label{
     position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+
   }
 
   html{
