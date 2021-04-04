@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "battleship-3dc8e": {
+      "hosting": {
+        "Battleship": [
+          "battleship-3dc8e"
+        ]
+      }
+    }
+  }
+}
