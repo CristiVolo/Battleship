@@ -23,7 +23,7 @@
     </svg>
 
   </div>
-  <!--Pentru partea cu-->
+
   <div id="VersionLayer_OPTIONAL_bd">
 		<div id="ID01_bed">
 			<span>/01</span>
@@ -52,29 +52,53 @@
 		</svg>
 	</div>
 
-
-
   <section class="image_1">
     <img src="{{logo}}" alt="">
   </section>
 
+	<div class="tabright">
+    <mat-tab-group dynamicHeight style="width: 320px;">
+
+      <mat-tab label="SIGN IN"> 
+        <div *ngIf="!isSignedIn" id="signin-credentials">
+          <mat-form-field id="mat-form-field-signin-email"> 
+            <mat-label style="color: #999999;">Email</mat-label>
+            <input matInput id="signin-credentials-email" type="text" style="color: #999999;" #email/>
+          </mat-form-field>
+          <mat-form-field id="mat-form-field-signin-password">
+            <mat-label style="color: #999999;">Password</mat-label>
+            <input matInput id="signin-credentials-password" type="text" style="color: #999999;" #password/>
+          </mat-form-field>
+          <button (click)="onSignin(email.value,password.value)" class="signup-signin-btn">Sign in</button>
+        </div>
+        <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
+      </mat-tab>
+
+      <mat-tab label="SIGN UP"> 
+        <div *ngIf="!isSignedIn" id="signup-credentials">
+          <mat-form-field id="mat-form-field-signup-email"> 
+            <mat-label style="color: #999999;">Email</mat-label>
+            <input matInput id="signup-credentials-email" type="text"
+            style="color: #999999;" #emailSignup/>
+          </mat-form-field>
+          <mat-form-field id="mat-form-field-signup-password"> 
+            <mat-label style="color: #999999;">Password</mat-label>
+            <input matInput id="signup-credentials-password" type="text" style="color: #999999;" #passwordSignup/>
+          </mat-form-field>  
+          <button (click)="onSignup(emailSignup.value,passwordSignup.value)" class="signup-signin-btn">Sign up</button>
+        </div>
+      </mat-tab>
+
+    </mat-tab-group>
+  </div>
+
+
   <section class="button-login">
 	<div class="example-button-row1">
 
-    <div *ngIf="!isSignedIn">
-      <h2>Sign up</h2>
-      <input type="text" #emailSignup/>
-      <input type="text" #passwordSignup/>
-      <button (click)="onSignup(emailSignup.value,passwordSignup.value)">Sign up</button>
-    </div>
+    
     <hr>
-    <div *ngIf="!isSignedIn">
-      <h2>Sign In</h2>
-      <input type="text" #email/>
-      <input type="text" #password/>
-      <button (click)="onSignin(email.value,password.value)">Sign in</button>
-    </div>
-    <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>    
+        
 
     <mat-tab-group dynamicHeight style="width: 320px;">
       <mat-tab label="SIGN IN"> 	

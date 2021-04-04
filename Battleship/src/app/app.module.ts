@@ -22,15 +22,21 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import {environment} from '../environments/environment.prod';
 import {FirebaseService} from './services/firebase.service';
 
+import {MatInputModule} from '@angular/material/input';
+import {DemoMaterialModule} from './material-module';
+import {FormControl, Validators} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    LoginStatusComponent,
+    LoginStatusComponent
   ],
     imports: [
+        DemoMaterialModule,
+        MatInputModule,
         BrowserModule,
         MatSliderModule,
         BrowserAnimationsModule,

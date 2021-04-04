@@ -82,12 +82,75 @@ section {
 
 .mat-tab-group{
   margin-left: -1100px;
-  margin-top: 350px;
-
+  margin-top: 10px;
   font-family: PT Sans, serif;
   font-size: 25px;
+}
+
+
+/* signup-signin-btn */
+
+.signup-signin-btn {
+  display: inline-block;
+	padding: 10px 30px;
+	color: #999999;
+	background-color: transparent;
+	border: 2px solid  rgb(228,217,111);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+  transition-property: background-color, color;
+  text-transform: uppercase;
+}
+
+.signup-signin-btn:hover {
+  color: #999999;
+  background-color:  rgb(228,217,111);
+  box-shadow: 0 0 30px rgb(228,217,111);
+}
+
+/* End of signup-signin-btn*/
+
+/* SignIn credentials */
+#signin-credentials {
+  margin-top: 50%;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+#signin-credentials-id{
 
 }
+
+#signin-credentials-password{
+  
+}
+/* End of SignIn credentials */
+
+/* SignUp credentials */
+#signup-credentials {
+  margin-top: 50%;
+}
+
+#signup-credentials-id{
+
+}
+
+#signup-credentials-password{
+  
+}
+/* End of SignUp credentials */
+
 
  /*
     Styles for tab label
