@@ -1,7 +1,7 @@
 <html>
 <section class="header-container">
 <section class="navbar">
-  
+
   <div class="example-label"></div>
   <div class="example-button-row navbar-fixed-top" style="background: linear-gradient(to bottom, #313132 100%, #161618 100%);">
     <button mat-button>Home</button>
@@ -51,21 +51,51 @@
 			</path>
 		</svg>
 	</div>
-  
-	
+
+
 
   <section class="image_1">
-    <img src="{{logo}}">
+    <img src="{{logo}}" alt="">
   </section>
-	
+
   <section class="button-login">
 	<div class="example-button-row1">
-	  <button mat-stroked-button color="primary">Login</button>
-	</div>
+
+    <div *ngIf="!isSignedIn">
+      <h2>Sign up</h2>
+      <input type="text" #emailSignup/>
+      <input type="text" #passwordSignup/>
+      <button (click)="onSignup(emailSignup.value,passwordSignup.value)">Sign up</button>
+    </div>
+    <hr>
+    <div *ngIf="!isSignedIn">
+      <h2>Sign In</h2>
+      <input type="text" #email/>
+      <input type="text" #password/>
+      <button (click)="onSignin(email.value,password.value)">Sign in</button>
+    </div>
+    <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>    
+
+    <mat-tab-group dynamicHeight style="width: 320px;">
+      <mat-tab label="SIGN IN"> 	
+        <div class="form1">
+          <div class="form">
+            <input type="text" name="name" autocomplete="off" required />
+            <label for="name" class="label-name">
+              <span class="content-name">Nickname</span>
+            </label>
+          </div>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="SIGN UP">
+        content2
+      </mat-tab>
+    </mat-tab-group>
+
+  </div>
   </section>
-		  
+
 </section>
-
-
 </section>
 </html>
