@@ -92,14 +92,15 @@ section {
 
 .signup-signin-btn {
   display: inline-block;
-	padding: 10px 30px;
+	padding: 10px 20px;
 	color: #999999;
 	background-color: transparent;
 	border: 2px solid  rgb(228,217,111);
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
-	margin-top: 30px;
+	margin-top: 100px;
+  margin-left: 60px;
 	transition: .3s ease;
   transition-property: background-color, color;
   text-transform: uppercase;
@@ -115,7 +116,8 @@ section {
 
 /* SignIn credentials */
 #signin-credentials {
-  margin-top: 50%;
+  margin-top: 30%;
+  margin-left: 0%;
 }
 
 .example-form {
@@ -133,13 +135,13 @@ section {
 }
 
 #signin-credentials-password{
-  
 }
 /* End of SignIn credentials */
 
 /* SignUp credentials */
 #signup-credentials {
-  margin-top: 50%;
+  margin-top: 30%;
+  margin-left: 0%;
 }
 
 #signup-credentials-id{
@@ -220,6 +222,22 @@ section {
     pointer-events: none;
     border-bottom: 1px solid black;
 
+  }
+  .example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+  .example-right-align {
+    text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
   }
 
   html{

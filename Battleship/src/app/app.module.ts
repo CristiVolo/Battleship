@@ -23,9 +23,10 @@ import {environment} from '../environments/environment.prod';
 import {FirebaseService} from './services/firebase.service';
 
 import {MatInputModule} from '@angular/material/input';
-import {DemoMaterialModule} from './material-module';
-import {FormControl, Validators} from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
 
+
+import * as firebase from 'firebase/app';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,6 @@ import {FormControl, Validators} from '@angular/forms';
     LoginStatusComponent
   ],
     imports: [
-        DemoMaterialModule,
         MatInputModule,
         BrowserModule,
         MatSliderModule,
@@ -49,6 +49,7 @@ import {FormControl, Validators} from '@angular/forms';
         AngularFirestoreModule,
         AngularFireStorageModule,
         AngularFireAuthModule,
+        MatIconModule,
         AngularFireModule.initializeApp({
         apiKey: "AIzaSyCWVqWEVYi-IafEmlQ5OUXGZIgsc0xG2XQ",
         authDomain: "battleship-3dc8e.firebaseapp.com",
