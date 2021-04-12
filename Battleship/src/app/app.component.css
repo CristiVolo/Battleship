@@ -69,6 +69,12 @@ section {
   display: inline-block;
 }
 
+.Line_1_bd_tutorial{
+  margin-left: -730.5px;
+  margin-top: 0.5px;
+  display: inline-block;
+}
+
 .Line_9_bhk{
   margin-left: -1165px;
   margin-top: 275.5px;
@@ -87,9 +93,20 @@ section {
   font-size: 25px;
 }
 
+/*Return to home from tutorial*/
+#home-ret-btn {
+  background-color: #999999;
+  transition: .3s ease;
+  transition-property: background-color, color;
+  text-transform: uppercase;
+  margin: -100px 0 0 185px;
+}
+#home-ret-btn:hover {
+  background-color:  rgb(228,217,111);
+  box-shadow: 0 0 30px rgb(228,217,111);
+}
 
 /* signup-signin-btn */
-
 .signup-signin-btn {
   display: inline-block;
 	padding: 10px 20px;
@@ -130,26 +147,12 @@ section {
   width: 100%;
 }
 
-#signin-credentials-id{
-
-}
-
-#signin-credentials-password{
-}
 /* End of SignIn credentials */
 
 /* SignUp credentials */
 #signup-credentials {
   margin-top: 30%;
   margin-left: 0%;
-}
-
-#signup-credentials-id{
-
-}
-
-#signup-credentials-password{
-  
 }
 /* End of SignUp credentials */
 
