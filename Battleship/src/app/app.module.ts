@@ -21,21 +21,25 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {environment} from '../environments/environment.prod';
 import {FirebaseService} from './services/firebase.service';
-
+import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 import * as firebase from 'firebase/app';
+import { TutorialComponent } from './components/tutorial/tutorial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    LoginStatusComponent
+    LoginStatusComponent,
+    TutorialComponent
   ],
     imports: [
+        MatDividerModule,
         MatInputModule,
         BrowserModule,
         MatSliderModule,
@@ -50,6 +54,7 @@ import * as firebase from 'firebase/app';
         AngularFireStorageModule,
         AngularFireAuthModule,
         MatIconModule,
+        MatGridListModule,
         AngularFireModule.initializeApp({
         apiKey: "AIzaSyCWVqWEVYi-IafEmlQ5OUXGZIgsc0xG2XQ",
         authDomain: "battleship-3dc8e.firebaseapp.com",

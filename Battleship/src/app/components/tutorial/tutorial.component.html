@@ -1,0 +1,262 @@
+<!--"BATTLESHIP" logo-->
+<img class="tutorial-logo" src="../assets/images/imageedit.png">
+ <svg class="selection-menu-background">
+   <rect id="selection-menu-background" rx="0" ry="0" x="0" y="0" width="454" height="724">
+   </rect>
+ </svg>
+
+ <!--Vertical line between logo & button menu and rest of content-->
+ <svg id="Line_1_bd_tutorial_svg" d="0 0 3 1079.5"
+ style="
+    overflow: visible;
+    position: absolute;
+    width: 4px;
+    height: 1079.503px;
+    margin-left: 454px !important;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+ ">
+   <path id="Line_1_bd_tutorial" d="M 0 0 L 0 1079.5"
+   style="
+    margin-left: 725px !important;
+    margin-top: 0.5px;
+    display: inline-block;
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+   "
+   >
+   </path>
+ </svg>
+
+ <!--LEAVE THIS BUTTON HERE! OTHERWISE, THE PAGE BREAKS-->
+ <button mat-button></button>
+
+ <!--Buttons menu-->
+ <button mat-button 
+ id="the-grid-btn" 
+ class="tutorial-section-btn"
+ (click)="switchToGrid()"
+ >THE GRID</button>
+ <button mat-button
+ id="the-ships-btn"
+ class="tutorial-section-btn"
+ (click)="switchToShips()"
+ >THE SHIPS</button>
+ <button mat-button 
+ id="ship-placement-btn"
+ class="tutorial-section-btn"
+ (click)="switchToShipPlacement()"
+ >SHIP PLACEMENT</button>
+ <button mat-button 
+ id="gameplay-btn" 
+ class="tutorial-section-btn"
+ (click)="switchToGameplay()"
+ >GAMEPLAY</button>
+
+<!--Content for each button-->
+<div id="tutorial-thegrid-content"
+*ngIf="onGrid" style="z-index: 1;">
+  <!--The grid itself-->
+  <mat-grid-list id="grid" cols="11" rowHeight="83px">
+    <!--1st row-->
+    <mat-grid-tile></mat-grid-tile>  
+    <mat-grid-tile><span class="grid-head">A</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">B</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">C</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">D</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">E</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">F</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">G</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">H</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">I</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">J</span></mat-grid-tile>
+    <!--2nd row-->
+    <mat-grid-tile><span class="grid-head">1</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--3rd row-->
+    <mat-grid-tile><span class="grid-head">2</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--4th row-->
+    <mat-grid-tile><span class="grid-head">3</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--5th row-->
+    <mat-grid-tile><span class="grid-head">4</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--6th row-->
+    <mat-grid-tile><span class="grid-head">5</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--7th row-->
+    <mat-grid-tile><span class="grid-head">6</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--8th row-->
+    <mat-grid-tile><span class="grid-head">7</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--9th row-->
+    <mat-grid-tile><span class="grid-head">8</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--10th row-->
+    <mat-grid-tile><span class="grid-head">9</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--11th row-->
+    <mat-grid-tile><span class="grid-head">10</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<div id="tutorial-theships-content"
+*ngIf="onShips" style="z-index: 2; position: relative;">
+  <mat-grid-list id="#ships" cols="5" rowHeight="1:1">
+
+    <!--Ship images-->
+    <mat-grid-tile><span class="grid-img">
+      <img src="../../../assets/images/Carrier-IMG_tk.png">
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-img">
+      <img src="../../../assets/images/Battleship-IMG_tj.png">
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-img">
+      <img src="../../../assets/images/Cruiser-IMG_tl.png">
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-img">
+      <img src="../../../assets/images/Submarine-IMG_tm.png">
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-img">
+      <img src="../../../assets/images/Destroyer-IMG_tn.png">
+    </span></mat-grid-tile>
+    <!--Ship name-->
+    <mat-grid-tile><span class="grid-text">
+      Carrier
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      Battleship
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      Cruiser
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      Submarine
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      Destroyer
+    </span></mat-grid-tile>
+    <!--Number of occupied squares-->
+    <mat-grid-tile><span class="grid-text">
+      5 squares
+    </span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      4 squares</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      3 squares</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      3 squares</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-text">
+      2 squares</span></mat-grid-tile>
+  </mat-grid-list>
+</div>
+ 
+<div class="tutorial-section-content"
+*ngIf="onShipPlacement" style="z-index: 3; position: relative;">
+  QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
+</div>
+
+<div class="tutorial-section-content"
+*ngIf="onGameplay" style="z-index: 4; position: relative;">
+  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+</div>
+
+

@@ -1,0 +1,196 @@
+#Line_1_bd_tutorial{
+    margin-left: 725px !important;
+    margin-top: 0.5px;
+    display: inline-block;
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+#Line1_bd_tutorial_svg {
+    overflow: visible;
+    position: absolute;
+    width: 4px;
+    height: 1079.503px;
+    margin-left: 725px !important;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+.tutorial-logo {
+
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+  
+  /*Selection menu*/
+#selection-menu-background {
+    opacity: 0.15;
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.selection-menu-background {
+    position: absolute;
+    overflow: visible;
+    width: 454px;
+    height: 724px;
+    left: 0px;
+    top: 300px;
+}
+
+.mat-tab-group {
+     flex-direction: row !important;
+}
+
+.mat-tab-label {
+    flex-direction: column !important;
+}
+
+#the_grid_btn {
+        left: 0px;
+		top: 570px;
+		position: absolute;
+		overflow: visible;
+		width: 447px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Tutorial_TheShips.html;
+		cursor: pointer;
+		line-height: 59px;
+		margin-top: -150px;
+		text-align: center;
+		font-family: PT Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(245,245,245,1);
+		text-transform: capitalize;
+}
+#the_ship_btn {
+    left: 0px;
+    top: 570px;
+    position: absolute;
+    overflow: visible;
+    width: 447px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Tutorial_TheShips.html;
+    cursor: pointer;
+    line-height: 59px;
+    margin-top: -50px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    color: rgba(245,245,245,1);
+    text-transform: capitalize;
+}
+#ship_placement_btn {
+    left: 0px;
+    top: 570px;
+    position: absolute;
+    overflow: visible;
+    width: 447px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Tutorial_TheShips.html;
+    cursor: pointer;
+    line-height: 59px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    color: rgba(245,245,245,1);
+    text-transform: capitalize;
+}
+.tutorial-section-btn {
+    left: 0px;
+    top: 570px;
+    position: absolute;
+    overflow: visible;
+    width: 447px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: Tutorial_TheShips.html;
+    cursor: pointer;
+    line-height: 59px;
+    text-align: center;
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    color: rgba(245,245,245,1);
+    text-transform: capitalize;
+    transition: .3s ease;
+}
+.tutorial-section-btn:hover {
+    color:  rgb(228,217,111);
+    text-decoration: underline;
+}
+
+#the-grid-btn {
+    margin-top: -150px;
+}
+#the-ships-btn {
+    margin-top: -50px;
+}
+#ship-placement-btn {
+    margin-top: 50px;
+}
+#gameplay-btn {
+    margin-top: 150px;
+}
+
+/*The content for each tutorial sections*/
+
+/*THE GRID*/
+#tutorial-thegrid-content {
+    margin-top: 0;
+    margin-left: 700px;
+}
+#grid {
+    width: 900px;
+}
+#grid .mat-grid-tile {
+    background: white;
+}
+#grid .grid-head {
+    font-weight: 900;
+    font-size: 150%;
+}
+
+/*THE SHIPS*/
+#tutorial-theships-content {
+    margin-top: 35px;
+    margin-left: 450px;
+}
+#ships{
+    width: 1100px;
+}
+#ships .mat-grid-tile {
+    background: transparent !important;
+}
+.grid-text {
+    color: white;
+    font-weight: bold;
+    font-family: PT Sans;
+    font-size: 50px;
+}
+
+/*SHIP PLACEMENT*/

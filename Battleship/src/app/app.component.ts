@@ -3,6 +3,7 @@ import { FirebaseService } from './services/firebase.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { MatTabChangeEvent } from '@angular/material/tabs';
 import { MatInput, MatInputModule } from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
 import * as firebase from 'firebase/app';
 
 
@@ -16,7 +17,34 @@ export class AppComponent implements OnInit{
   title = 'Battleship';
   //title = 'firebase-angular-auth';
 
+  // Check if you are signed in
   isSignedIn = false
+  //Check on what tab you are
+  onHomeTab = true
+  onTutorialTab = false
+  onLeaderboardTab = false
+  onContactTab = false
+  onAboutTab = false
+
+  // Tab switch methods
+  switchToHome() {
+
+    this.onHomeTab = true
+    this.onTutorialTab = false
+    this.onLeaderboardTab = false
+    this.onContactTab = false
+    this.onAboutTab = false
+  }
+
+  switchToTutorial() {
+
+    this.onHomeTab = false
+    this.onTutorialTab = true
+    this.onLeaderboardTab = false
+    this.onContactTab = false
+    this.onAboutTab = false
+  }
+
   constructor(public firebaseService : FirebaseService){}
   SignUpForm:FormGroup | undefined;
 
