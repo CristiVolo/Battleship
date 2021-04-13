@@ -167,7 +167,10 @@
 
 <div *ngIf="onTutorialTab" style="z-index: 1; position: relative;">
   <app-tutorial></app-tutorial>
-  <button mat-fab id="home-ret-btn" (click)="switchToHome()" style="color: #999999; position: absolute;">
+  <button mat-fab id="home-ret-btn" (click)="switchToHome()" style="color: #999999; position: absolute; float: left; z-index: 10;">
+    <mat-icon style="color: red;">home</mat-icon>
+  </button>
+  <button mat-fab id="home-ret-btn-correction-for-ship-placement" (click)="switchToHome()" style="color: #999999; position: absolute; float: left; z-index: 10;">
     <mat-icon style="color: red;">home</mat-icon>
   </button>
   

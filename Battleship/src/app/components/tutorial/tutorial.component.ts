@@ -6,6 +6,7 @@ import {MatDividerModule} from '@angular/material/divider';
   templateUrl: './tutorial.component.html',
   styleUrls: ['./tutorial.component.css']
 })
+
 export class TutorialComponent implements OnInit {
 
   // Check on what tutorial section you are

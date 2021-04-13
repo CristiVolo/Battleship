@@ -249,14 +249,85 @@
   </mat-grid-list>
 </div>
  
-<div class="tutorial-section-content"
-*ngIf="onShipPlacement" style="z-index: 3; position: relative;">
-  QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ
+<div class="tutorial-section-content" id="ship-placement-content"
+*ngIf="onShipPlacement" style="z-index: 3; position: relative; color: white;">
+  <!--The 2 side ships-->
+  <div class="ship-placement-content-div"
+  id="ship-placement-content-ships">
+    <span style="font-family: Source Han Sans JP; font-size: 30px;
+    margin-left: 35%;"
+    >SHIPS</span>
+    <img style="display: block; margin-left: 24%; margin-top: 80px;"
+     src="../../../assets/images/Destroyer-IMG_ry.png">
+    <img style="display: block;"
+     src="../../../assets/images/Carrier-IMG_sj.png">
+  </div>
+
+  <!--The text-->
+  <div class="ship-placement-content-div"
+  id="ship-placement-content-text">
+
+    <span class="text-title" style="
+    color: rgba(239,200,98,1);">
+    DRAG-A-SHIP</span>
+    <span class="text-portion">
+      You can drag a model from the "SHIPS" section (Hold) and place it horizontally or vertically on the grid, between two line/ column delimiters.<br><br>After placement, a ship can still be re-placed and rotated, by pressing the rotate (<mat-icon style=" color: rgba(239,200,98,1);">rotate_90_degrees_ccw</mat-icon>) button.  
+    </span> <!--svg icon in here-->
+    <span class="text-title" style="
+    color: rgba(239,200,98,1); margin-top: 50px;">SHIP ROTATION</span>
+    <span class="text-portion">
+      HORIZONTAL -> VERTICAL:<br>Ax: left-most square;<br>Direction: 90 degrees clockwise.<br><br>VERTICAL -> HORIZONTAL:<br>Ax: upper-most square;<br>Direction: 90 degrees counter-clockwise
+    </span>
+    <span class="text-title" style=
+    "color: rgba(248,130,130,1); margin-top: 50px;">NOT PERMITTED</span>
+    <span class="text-portion">
+      Diagonal, on-the-delimiters, or out-of-bounds placement will automatically place the model back in the "SHIPS" section.<br><br>The rule also applies on the result of a rotation<br>(say, in the upper grid, the bottom line is nr. 10, and you want to rotate the horizontal Carrier, the new placement will not be accepted).
+    </span>
+  </div>
+
+  <!--The 2 arrow icons-->
+  <div class="ship-placement-content-div"
+  id="ship-placement-content-arrows">
+    <mat-icon
+    style="color: rgba(239,200,98,1); font-size: 150px; margin-top: 50px;">arrow_forward</mat-icon>
+    <mat-icon 
+    style="color: rgba(248,130,130,1); font-size: 150px; display: block; margin-top: 400px;">arrow_forward</mat-icon>
+  </div>
+
+  <!--The 2 images that show the correct/incorrect ship placement-->
+  <div class="ship-placement-content-div"
+  id="ship-placement-content-imgs">
+    <img src="../../../assets/images/correct_ship_placement.png"
+    style="margin-top: -150px;">
+    <img src="../../../assets/images/incorrect_ship_placement.png"
+    style="display: block; margin-top: 10px;">
+  </div>
 </div>
 
 <div class="tutorial-section-content"
-*ngIf="onGameplay" style="z-index: 4; position: relative;">
-  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+id="gameplay-content" 
+*ngIf="onGameplay"
+style="z-index: 4; position: relative;">
+  <span class="text-title" style="margin-top: 100px; color:gold;">TURN SYSTEM</span>
+
+  <span>
+  This game is a turn-based strategy (TBS). This means that you and your opponent will take turns. A turn will end when the player presses the ("END TURN") button, or when 60 seconds have passed.
+  </span>
+
+  <span class="text-title" style="margin-top: 100px; color:gold;">HIT-OR-MISS</span>
+
+  <span>
+  A player's goal is to sink all the opposing ships. A ship sinks when all the squares it is placed on are HIT. 
+  During its turn, a player can <span style="color: gold; font-weight: bold;">mark a square on the opponent's grid</span> (it will be colored in yellow). When the turn ends, the color of the square changes: if <span style="color: red; font-weight: bold;">part of a ship is placed on that square</span>, that square will be colored in red, and marked with an <span style="color: red; font-weight: bold;">X</span>. However, <span style="color: blue; font-weight: bold;">if that square is empty</span>, it will be recolored in blue.
+
+  NOTE: A player's ships are only visible TO THAT PLAYER.
+  </span>
+
+  <span class="text-title" style="margin-top: 100px; color:gold;">ENDGAME</span>
+
+  <span>
+  The game ends when all your opponent's occupied squares are HIT; afterwards, you will be declared WINNER (or if you fail, the game will call you a LOSER), and you will return to the main menu, where you can see you wins and losses.
+  </span>
 </div>
 
 

@@ -105,6 +105,17 @@ section {
   background-color:  rgb(228,217,111);
   box-shadow: 0 0 30px rgb(228,217,111);
 }
+#home-ret-btn-correction-for-ship-placement {
+  background-color: #999999;
+  transition: .3s ease;
+  transition-property: background-color, color;
+  text-transform: uppercase;
+  margin: 825px 0 0 -1220px;
+}
+#home-ret-btn-correction-for-ship-placement:hover {
+  background-color:  rgb(228,217,111);
+  box-shadow: 0 0 30px rgb(228,217,111);
+}
 
 /* signup-signin-btn */
 .signup-signin-btn {
