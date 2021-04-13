@@ -5,6 +5,7 @@ import { MatTabChangeEvent } from '@angular/material/tabs';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import * as firebase from 'firebase/app';
+//import {onShipPlacement} from './components/tutorial/tutorial.component';
 
 
 @Component({

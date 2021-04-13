@@ -26,7 +26,6 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 
-
 import * as firebase from 'firebase/app';
 import { TutorialComponent } from './components/tutorial/tutorial.component';
 
