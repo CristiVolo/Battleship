@@ -5,6 +5,7 @@
   <section class="header-container">
   <section class="navbar">
 
+    <!--Navbar-->
     <div class="example-label"></div>
     <div class="example-button-row navbar-fixed-top" style="background: linear-gradient(to bottom, #313132 100%, #161618 100%);">
       <button mat-button>Home</button>
@@ -20,12 +21,10 @@
           <path id="Line_1_bd" d="M 0 0 L 0 1079.5">
           </path>
         </svg>
-
         <svg class="Line_9_bhk" viewBox="0 0 244.5 1">
           <path id="Line_9_bhk" d="M 0 0 L 244.5 1">
           </path>
         </svg>
-
     </div>
 
     <div id="VersionLayer_OPTIONAL_bd">
@@ -56,6 +55,7 @@
       </svg>
     </div>
 
+    <!--Logo-->
     <section class="image_1">
       <img src="{{logo}}" alt="">
     </section>
@@ -67,9 +67,9 @@
 
         <!--SIGN IN-->
         <mat-tab label="SIGN IN">
-          
           <div *ngIf="!isSignedIn" id="signin-credentials">
-              
+
+            <!--SIGN IN: Email-->
             <mat-form-field id="mat-form-field-signin-email" style="width: 100%;"> 
               <mat-label style="color: #999999; font-size: 16px;">Email</mat-label>
               <input matInput id="signin-credentials-email" type="text" style="color: #999999; font-size: 16px;" 
@@ -77,21 +77,21 @@
               <mat-error *ngIf="email.invalid" style="font-size: 16px;">{{ getErrorMessage() }}</mat-error>
             </mat-form-field>
 
+            <!--SIGN IN: Password-->
             <mat-form-field id="mat-form-field-signin-password" style="width: 100%;">
               <mat-label style="color: #999999; font-size: 16px;">Enter your password</mat-label>
               <input matInput id ="signin-credentials-password" style="color: #999999; font-size: 16px;"
               #password [type]="hide ? 'password' : 'text'">
               <button mat-icon-button matSuffix (click)="hide = !hide"
               [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
               </button>
             </mat-form-field>
+
             <!--Router-->
             <mat-hint allign="end">
-            
               <!--Functionalitate neadaugata momentan-->
-            <button mat-button style="color: #EFC862;">Reset password</button> 
-              
+              <button mat-button style="color: #EFC862;">Reset password</button> 
             </mat-hint>
 
             <button (click)="onSignin(email.value,password.value)" class="signup-signin-btn">Sign in</button>
@@ -101,9 +101,9 @@
 
         <!--SIGN UP-->
         <mat-tab label="SIGN UP"> 
-
           <div *ngIf="!isSignedIn" id="signup-credentials">
           
+            <!--SIGN UP: Email-->
             <mat-form-field id="mat-form-field-signup-email" style="width: 100%;"> 
               <mat-label style="color: #999999; font-size: 16px;">Email</mat-label>
               <input matInput id="signup-credentials-email" type="text" style="color: #999999; font-size: 16px;" 
@@ -111,15 +111,14 @@
               <mat-error *ngIf="email.invalid" style="font-size: 16px;">{{ getErrorMessage() }}</mat-error>
             </mat-form-field>
             
+            <!--SIGN UP: Password-->
             <mat-form-field id="mat-form-field-signup-password" style="width: 100%;"> 
               <mat-label style="color: #999999; font-size: 16px;">Enter your password</mat-label>
-
               <input matInput id="signup-credentials-password" type="text" style="color: #999999; font-size: 16px;" 
-              #passwordSignup required [type]="hide ? 'password' : 'text'">
-              
+              #passwordSignup required [type]="hide ? 'password' : 'text'">             
               <button mat-icon-button matSuffix (click)="hide = !hide"
               [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
               </button>
             </mat-form-field>
             
@@ -127,18 +126,13 @@
           
           </div>
         </mat-tab>
-
       </mat-tab-group>
     </div>
 
 
     <section class="button-login">
-    <div class="example-button-row1">
-
-      
+    <div class="example-button-row1">     
       <hr>
-          
-
       <mat-tab-group dynamicHeight style="width: 320px;">
         <mat-tab label="SIGN IN"> 	
           <div class="form1">
@@ -155,16 +149,14 @@
           content2
         </mat-tab>
       </mat-tab-group>
-
     </div>
     </section>
-
   </section>
   </section>
-
 </div>
 <!--End of Home-->
 
+<!--Tutorial-->
 <div *ngIf="onTutorialTab" style="z-index: 1; position: relative;">
   <app-tutorial></app-tutorial>
   <button mat-fab id="home-ret-btn" (click)="switchToHome()" style="color: #999999; position: absolute; float: left; z-index: 10;">
@@ -173,8 +165,10 @@
   <button mat-fab id="home-ret-btn-correction-for-ship-placement" (click)="switchToHome()" style="color: #999999; position: absolute; float: left; z-index: 10;">
     <mat-icon style="color: red;">home</mat-icon>
   </button>
-  
 </div>
+<!--End of Tutorial-->
 
+<!--Profile page (post SIGN IN)-->
 
+<!--End of Profile page-->
 </html>
