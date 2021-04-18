@@ -1,0 +1,93 @@
+/* Small Logo */
+.small-logo-border {
+    height:10px;
+    border-width: 100px;
+    color: white;
+    margin-left: -1200px;
+    margin-right: 730px;
+    z-index: 2;
+    margin-top: -100px;
+}
+#small-logo {
+    margin-left: -1025px;
+    margin-top: -120px;
+}
+/* End of Small Logo*/
+
+/* Player vs. AI button */
+#pvm-btn {
+    margin-left: -1130px;
+    width: 380px;
+    margin-top: 150px;
+    display: block;
+	padding: 10px 20px;
+	color: whitesmoke;
+	background-color: transparent;
+	border: 10px solid whitesmoke;
+    border-style: ridge;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	transition: .3s ease;
+    transition-property: background-color, color;
+    text-transform: uppercase;
+}
+#pvm-btn:hover {
+    border: 10px solid #00416a;
+    color: gold;
+    background-color:  #00416a;  ;
+    box-shadow: 0 0 30px gold;
+}
+/* End of Player vs. AI button */
+
+/* Player vs. Player button */
+#pvp-btn {
+    margin-left: -1130px;
+    margin-top: 100px;
+    display: block;
+	padding: 10px 20px;
+	color: whitesmoke;
+	background-color: transparent;
+	border: 10px solid whitesmoke;
+    border-style: ridge;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	transition: .3s ease;
+    transition-property: background-color, color;
+    text-transform: uppercase;
+}
+#pvp-btn:hover {
+  border: 10px solid #00416a;
+  color: gold;
+  background-color:  #00416a;  ;
+  box-shadow: 0 0 30px gold;
+}
+/* End of Player vs. Player button */
+
+/* Disconnect button */
+#disconnect-btn {
+    width: 380px;
+    margin-left: -1130px;
+    margin-top: 100px;
+    display: block;
+	padding: 10px 20px;
+	color: whitesmoke;
+	background-color: transparent;
+	border: 10px solid whitesmoke;
+    border-style: ridge;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	
+	transition: .3s ease;
+    transition-property: background-color, color;
+    text-transform: uppercase;
+}
+#disconnect-btn:hover {
+  border-color:  #ff0099;
+  color: #ff0099;
+  background-color:  #4A00E0;
+  box-shadow: 0 0 30px #ff0099  ;
+}
+/* End of Disconnect button */

@@ -85,7 +85,6 @@ section {
   margin-top: 100.5px;
   display: inline-block;
 }
-
 .mat-tab-group{
   margin-left: -1100px;
   margin-top: 10px;
@@ -167,6 +166,25 @@ section {
 }
 /* End of SignUp credentials */
 
+/* Player Status Box */
+#player-status-box {
+  margin: 100px 0 0 -1150px;
+  height: 400px;
+  width: 400px;
+}
+#player-status-box-card {
+  background: linear-gradient(to bottom, #efefbb
+  100%, #d4d3dd 100%);
+  color: #283048;
+  font-weight: bold;
+  vertical-align: middle;
+  font-family: Source Han Sans JP, serif;
+}
+#match-status-grid-list .mat-grid-tile{
+  height: 20px;
+  color: #283048; 
+}
+/* End of Player Status Box */
 
  /*
     Styles for tab label

@@ -4,7 +4,17 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import { MatTabChangeEvent } from '@angular/material/tabs';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatTableModule} from '@angular/material/table';
+
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import * as firebase from 'firebase/app';
+import { identifierName, Identifiers } from '@angular/compiler';
 //import {onShipPlacement} from './components/tutorial/tutorial.component';
 
 
@@ -16,6 +26,9 @@ import * as firebase from 'firebase/app';
 export class AppComponent implements OnInit{
   logo:string ="assets/images/imageedit_19_3329358286_i.png";
   title = 'Battleship';
+  user = "";
+  email_field = "";
+  
   //title = 'firebase-angular-auth';
 
   // Check if you are signed in
@@ -60,8 +73,32 @@ export class AppComponent implements OnInit{
     else
     this.isSignedIn = false
   }
+/*
+  componentDidMount() {
 
+    let user = this.firebaseService.firebaseAuth.curren;
 
+    let name, email, photoUrl, uid, emailVerified;
+
+    if (await user) {
+      name = user.displayName; 
+      email = user.email;
+      photoUrl = user.photoURL; 
+      emailVerified = user.emailVerified;
+      uid = user.uid;
+
+      if (!email) {
+        email = user.providerData[0].email;
+      }
+
+      console.log(name, email, photoUrl, emailVerified, uid);
+    }
+
+  }
+  get currentUserId(): string {
+    return this.isSignedIn ? this.firebaseService.firebaseAuth. : null;
+  }
+*/
   async onSignup(email:string,password:string){
     await this.firebaseService.signup(email,password)
     if(this.firebaseService.isLoggedIn)
@@ -69,12 +106,14 @@ export class AppComponent implements OnInit{
   }
   async onSignin(email:string,password:string){
     await this.firebaseService.signin(email,password)
-    if(this.firebaseService.isLoggedIn)
-    this.isSignedIn = true
+    if(this.firebaseService.isLoggedIn) {
+      this.isSignedIn = true
+      this.email_field = email
+    }
   }
   handleLogout(){
     this.isSignedIn = false
-
+    this.email_field = ""
   }
   hide = true;
   email = new FormControl('', [Validators.required, Validators.email]);

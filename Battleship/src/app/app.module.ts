@@ -25,7 +25,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
-
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
 import * as firebase from 'firebase/app';
 import { TutorialComponent } from './components/tutorial/tutorial.component';
 
@@ -38,6 +39,8 @@ import { TutorialComponent } from './components/tutorial/tutorial.component';
     TutorialComponent
   ],
     imports: [
+        MatTableModule,
+        MatCardModule,
         MatDividerModule,
         MatInputModule,
         BrowserModule,

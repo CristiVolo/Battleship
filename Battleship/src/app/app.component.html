@@ -56,14 +56,41 @@
     </div>
 
     <!--Logo-->
-    <section class="image_1">
+    <section *ngIf="!isSignedIn" class="image_1">
       <img src="{{logo}}" alt="">
     </section>
 
+    <!--Player Status Box (SIGNED IN)-->
+    <section *ngIf="isSignedIn" id="player-status-box">
+      <mat-card id="player-status-box-card">
+        <mat-card-title 
+        style="text-align: center;
+        font-family: Source Han Sans JP, serif;
+        font-weight: bolder;">
+        PLAYER STATUS
+        </mat-card-title>
+        <mat-divider></mat-divider>
+        <!--<mat-card-content>NICKNAME: </mat-card-content>
+        <mat-divider></mat-divider>-->
+        <mat-card-content>E-MAIL: {{email_field}}</mat-card-content>
+        <mat-divider style="font-weight: bold;"></mat-divider>
+        <mat-card-content></mat-card-content>
+        <mat-card-content style="text-align: center;">MATCHES</mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+          <mat-grid-list cols="2" rowHeight="20px" id="match-status-grid-list">
+            <mat-grid-tile>PLAYED</mat-grid-tile>
+            <mat-grid-tile>WON</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-content>
+      </mat-card>
+    </section>
 
     <!--Registration-->
     <div class="tabright">
-      <mat-tab-group dynamicHeight style="width: 320px;">
+      <mat-tab-group *ngIf="!isSignedIn" dynamicHeight style="width: 320px;">
 
         <!--SIGN IN-->
         <mat-tab label="SIGN IN">
@@ -96,7 +123,7 @@
 
             <button (click)="onSignin(email.value,password.value)" class="signup-signin-btn">Sign in</button>
           </div>
-          <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
+          
         </mat-tab>
 
         <!--SIGN UP-->
@@ -127,6 +154,8 @@
           </div>
         </mat-tab>
       </mat-tab-group>
+
+      <app-home *ngIf="isSignedIn" (isLogout)="handleLogout()"></app-home>
     </div>
 
 
