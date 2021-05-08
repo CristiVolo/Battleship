@@ -4,6 +4,20 @@
 <hr class="small-logo-border">
 
 <!--vs. AI, vs. Player, Disconnect buttons-->
-<button id="pvm-btn" (click)="logout()">PLAYER vs. AI</button>
-<button id="pvp-btn" (click)="logout()">PLAYER vs. PLAYER</button>
-<button id="disconnect-btn" (click)="logout()">DISCONNECT</button>
+
+
+<div *ngIf="onPvpGame" style="z-index: 30; position: relative;">
+   
+
+    <button id="pvm-btn" (click)="logout()">PLAYER vs. AI</button>
+
+    <button id="pvp-btn" (click)="switchToPvp()">PLAYER vs. PLAYER</button>
+
+    <button id="disconnect-btn" (click)="logout()">DISCONNECT</button>
+</div>
+
+<div *ngIf="!onPvpGame" style="z-index: 10; position: relative;">
+   
+<app-playervsplayer></app-playervsplayer>
+
+</div>
