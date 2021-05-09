@@ -21,4 +21,76 @@
     margin-top: 0px;
     display: inline-block;
   }
+
+  .rotate_button{
+    width: 200px;
+    height: 200px;
+  }
   
+.rotate_icon{
+  font-size: 200px;
+}
+
+#tutorial-thegrid-content {
+  margin-top: -50px;
+  margin-left: 700px;
+}
+#grid {
+  width: 900px;
+}
+#grid .mat-grid-tile {
+  background: white;
+}
+#grid .grid-head {
+  font-weight: 900;
+  font-size: 360%;
+}
+
+#start-btn {
+  margin-left: 330px !important;
+  width: 170px ;
+  margin-top: -790px !important;
+  display: block;
+  padding: 10px 20px;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 10px solid whitesmoke;
+  border-style: ridge;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  transition: .3s ease;
+  transition-property: background-color, color;
+  text-transform: uppercase;
+}
+#start-btn:hover {
+  border: 10px solid #00416a;
+  color: gold;
+  background-color:  #00416a;  ;
+  box-shadow: 0 0 30px gold;
+}
+/* End of Player vs. AI button */
+
+/* Player vs. Player button */
+#start-btn {
+  margin-left: -1130px;
+  margin-top: 100px;
+  display: block;
+  padding: 10px 20px;
+  color: whitesmoke;
+  background-color: transparent;
+  border: 10px solid whitesmoke;
+  border-style: ridge;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  transition: .3s ease;
+  transition-property: background-color, color;
+  text-transform: uppercase;
+}
+#start-btn:hover {
+  border: 10px solid #00416a;
+  color: gold;
+  background-color:  #00416a;  ;
+  box-shadow: 0 0 30px gold;
+}
