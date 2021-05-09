@@ -94,3 +94,37 @@
   background-color:  #00416a;  ;
   box-shadow: 0 0 30px gold;
 }
+
+/* Size of a square: 83px * 81.81px */
+.drag-ships{
+  height: 800px;
+  width: 520px;
+  z-index: 100;
+  margin-top: 50px;
+  background-color: transparent;
+}
+.draggable-ship div{
+  width: 81.81px; 
+  height: 81.81px;
+  background-color: orangered !important;
+}
+.carrier-container {
+  display: flex;
+  margin: 10px;
+}
+.battleship-container {
+  display: flex;
+  margin: 10px;
+}
+.cruiser-container {
+  display: flex;
+  margin: 10px;
+}
+.submarine-container {
+  display: flex;
+  margin: 10px;
+}
+.destroyer-container {
+  display: flex;
+  margin: 10px;
+}
