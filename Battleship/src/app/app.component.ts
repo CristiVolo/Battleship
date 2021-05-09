@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FirebaseService } from './services/firebase.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+//import { FirebaseService } from '../../services/firebase.service';
+
 import { MatTabChangeEvent } from '@angular/material/tabs';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
@@ -39,6 +41,7 @@ export class AppComponent implements OnInit{
   onLeaderboardTab = false
   onContactTab = false
   onAboutTab = false
+  onPvpGame=false;
 
   // Tab switch methods
   switchToHome() {
@@ -48,6 +51,8 @@ export class AppComponent implements OnInit{
     this.onLeaderboardTab = false
     this.onContactTab = false
     this.onAboutTab = false
+
+    this.onPvpGame = false
   }
 
   switchToTutorial() {
@@ -57,10 +62,28 @@ export class AppComponent implements OnInit{
     this.onLeaderboardTab = false
     this.onContactTab = false
     this.onAboutTab = false
+
+    this.onPvpGame = false
   }
 
+  switchToPvp(){
+    this.onHomeTab = false
+    this.onTutorialTab = false
+    this.onLeaderboardTab = false
+    this.onContactTab = false
+    this.onAboutTab = false
+
+    this.onPvpGame = true
+
+  }
+
+
+  @Output() isLogout = new EventEmitter<void>()
+  
   constructor(public firebaseService : FirebaseService){}
   SignUpForm:FormGroup | undefined;
+
+  
 
   ngOnInit(){
 
@@ -73,32 +96,12 @@ export class AppComponent implements OnInit{
     else
     this.isSignedIn = false
   }
-/*
-  componentDidMount() {
 
-    let user = this.firebaseService.firebaseAuth.curren;
-
-    let name, email, photoUrl, uid, emailVerified;
-
-    if (await user) {
-      name = user.displayName; 
-      email = user.email;
-      photoUrl = user.photoURL; 
-      emailVerified = user.emailVerified;
-      uid = user.uid;
-
-      if (!email) {
-        email = user.providerData[0].email;
-      }
-
-      console.log(name, email, photoUrl, emailVerified, uid);
-    }
-
+  logout(){
+    this.firebaseService.logout()
+    this.isLogout.emit()
   }
-  get currentUserId(): string {
-    return this.isSignedIn ? this.firebaseService.firebaseAuth. : null;
-  }
-*/
+
   async onSignup(email:string,password:string){
     await this.firebaseService.signup(email,password)
     if(this.firebaseService.isLoggedIn)
