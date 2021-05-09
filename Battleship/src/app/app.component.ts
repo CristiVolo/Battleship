@@ -100,6 +100,8 @@ export class AppComponent implements OnInit{
   logout(){
     this.firebaseService.logout()
     this.isLogout.emit()
+    this.isSignedIn = false
+    this.email_field = ""
   }
 
   async onSignup(email:string,password:string){
@@ -114,10 +116,11 @@ export class AppComponent implements OnInit{
       this.email_field = email
     }
   }
-  handleLogout(){
-    this.isSignedIn = false
-    this.email_field = ""
-  }
+  //Te fut in gura sorine
+  //handleLogout(){
+  //  this.isSignedIn = false
+  //  this.email_field = ""
+  //}
   hide = true;
   email = new FormControl('', [Validators.required, Validators.email]);
 

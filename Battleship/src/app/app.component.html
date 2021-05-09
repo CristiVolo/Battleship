@@ -155,7 +155,7 @@
         </mat-tab>
       </mat-tab-group>
 
-      <div *ngIf="isSignedIn" (isLogout)="handleLogout()">
+      <div *ngIf="isSignedIn">
         <!--Small logo (SIGNED IN)-->
           <hr class="small-logo-border">
           <img id="small-logo" src="../../../assets/images/small_logo.png">
@@ -164,24 +164,22 @@
 <!--vs. AI, vs. Player, Disconnect buttons-->
 
 
-<div *ngIf="!onPvpGame" style="z-index: 30; position: relative;">
+      <div *ngIf="!onPvpGame" style="z-index: 30; position: relative;">
 
-      <button id="pvm-btn" (click)="logout()">PLAYER vs. AI</button>
+            <button id="pvm-btn" (click)="logout()">PLAYER vs. AI</button>
 
-      <button id="pvp-btn" (click)="switchToPvp()">PLAYER vs. PLAYER</button>
+            <button id="pvp-btn" (click)="switchToPvp()">PLAYER vs. PLAYER</button>
 
-      <button id="disconnect-btn" (click)="logout()">DISCONNECT</button>
-      
-</div>
+            <button id="disconnect-btn" (click)="logout()">DISCONNECT</button>
+            
+      </div>
 
 
 
-<div *ngIf="onPvpGame" style="z-index: 50; position: relative;">
-    
-    <p>ROSES</p>
-</div>
+
 
       </div>
+
     </div>
 
 
@@ -210,6 +208,13 @@
   </section>
 </div>
 <!--End of Home-->
+
+<!--Pvp in game-->
+<div *ngIf="onPvpGame" style="z-index: 50; position: relative;">
+    
+  <app-playervsplayer></app-playervsplayer>
+</div>
+<!--End of PVP-->
 
 <!--Tutorial-->
 <div *ngIf="onTutorialTab" style="z-index: 1; position: relative;">
