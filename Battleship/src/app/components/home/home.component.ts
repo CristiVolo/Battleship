@@ -8,6 +8,12 @@ import { FirebaseService } from '../../services/firebase.service';
 })
 export class HomeComponent implements OnInit {
 
+  onPvpGame=true;
+
+  switchToPvp(){
+    this.onPvpGame = false;
+  }
+
   @Output() isLogout = new EventEmitter<void>()
   constructor(public firebaseService: FirebaseService) { }
 

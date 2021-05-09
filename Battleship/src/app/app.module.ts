@@ -29,6 +29,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import * as firebase from 'firebase/app';
 import { TutorialComponent } from './components/tutorial/tutorial.component';
+import { PlayervsplayerComponent } from './components/playervsplayer/playervsplayer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { TutorialComponent } from './components/tutorial/tutorial.component';
     LoginComponent,
     HomeComponent,
     LoginStatusComponent,
-    TutorialComponent
+    TutorialComponent,
+    PlayervsplayerComponent
   ],
     imports: [
         MatTableModule,
