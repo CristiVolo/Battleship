@@ -37,6 +37,8 @@
 }
 #grid {
   width: 900px;
+  height: 900px;
+  background: white;
 }
 #grid .mat-grid-tile {
   background: white;
