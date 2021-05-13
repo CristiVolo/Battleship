@@ -6919,7 +6919,7 @@
   dependencies:
     "colors" "1.4.0"
 
-"jasmine@2.8.0":
+"jasmine@^2.8.0", "jasmine@2.8.0":
   "integrity" "sha1-awicChFXax8W3xG4AUbZHU6Lij4="
   "resolved" "https://registry.npmjs.org/jasmine/-/jasmine-2.8.0.tgz"
   "version" "2.8.0"
