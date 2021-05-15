@@ -86,6 +86,7 @@ export class AppComponent implements OnInit{
   
 
   ngOnInit(){
+    //this.initialAuthStatus = this.authenticationStatus;
 
     this.SignUpForm=new FormGroup({
       'password': new FormControl(null, [Validators.required, Validators.minLength(4)])

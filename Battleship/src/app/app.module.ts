@@ -3,14 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
-import { HomeComponent } from './components/home/home.component';
+//import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LoginStatusComponent } from './components/login-status/login-status.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import MyAppConfig from './config/my-app-config';
 import {config} from 'rxjs';
@@ -35,8 +34,6 @@ import { PlayervsplayerComponent } from './components/playervsplayer/playervspla
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent,
-    LoginStatusComponent,
     TutorialComponent,
     PlayervsplayerComponent
   ],
