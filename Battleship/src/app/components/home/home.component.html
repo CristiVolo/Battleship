@@ -1,0 +1,23 @@
+<!--Small logo (SIGNED IN)-->
+<hr class="small-logo-border">
+<img id="small-logo" src="../../../assets/images/small_logo.png">
+<hr class="small-logo-border">
+
+<!--vs. AI, vs. Player, Disconnect buttons-->
+
+
+<div *ngIf="onPvpGame1" style="z-index: 30; position: relative;">
+   
+
+    <button id="pvm-btn" (click)="logout()">PLAYER vs. AI</button>
+
+    <button id="pvp-btn" (click)="switchToPvp1()">PLAYER vs. PLAYER</button>
+
+    <button id="disconnect-btn" (click)="logout()">DISCONNECT</button>
+</div>
+
+<div *ngIf="!onPvpGame1" style="z-index: 10; position: relative;">
+   
+<app-playervsplayer></app-playervsplayer>
+
+</div>

@@ -117,9 +117,8 @@ export class AppComponent implements OnInit{
       this.email_field = email
     }
   }
-  //Te fut in gura sorine
   //handleLogout(){
-  //  this.isSignedIn = false
+  //  this.isSignedIn = falseinvalid
   //  this.email_field = ""
   //}
   hide = true;
