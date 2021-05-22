@@ -27,6 +27,7 @@ import { identifierName, Identifiers } from '@angular/compiler';
 })
 export class AppComponent implements OnInit{
   logo:string ="assets/images/imageedit_19_3329358286_i.png";
+  image_carrier1:string="/assets/images/Carrier_dim5_image_bfz";
   title = 'Battleship';
   user = "";
   email_field = "";
@@ -42,6 +43,7 @@ export class AppComponent implements OnInit{
   onContactTab = false
   onAboutTab = false
   onPvpGame=false;
+  resetpass=false;
 
   // Tab switch methods
   switchToHome() {
@@ -77,6 +79,9 @@ export class AppComponent implements OnInit{
 
   }
 
+  switchToResetPassword(){
+    this.resetpass=true;
+  }
 
   @Output() isLogout = new EventEmitter<void>()
   
@@ -106,8 +111,10 @@ export class AppComponent implements OnInit{
 
   async onSignup(email:string,password:string){
     await this.firebaseService.signup(email,password)
+    
     if(this.firebaseService.isLoggedIn)
     this.isSignedIn = true
+    
   }
   async onSignin(email:string,password:string){
     await this.firebaseService.signin(email,password)
@@ -132,9 +139,12 @@ export class AppComponent implements OnInit{
   }
 
   resetPassword(email:string){
+  
+    this.resetpass=false;
     return firebase.default.auth().sendPasswordResetEmail(email)
     .then(() => console.log("We've sent you a password reset link"))
     .catch(error => console.log(error.message))
+    
   }
 
 /*
