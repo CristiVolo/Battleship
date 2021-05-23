@@ -13,7 +13,7 @@
       (click)="switchToTutorial()">Tutorial</button>
       <button mat-button color="accent">Leaderboard</button>
       <button mat-button color="warn">Contact</button>
-      <a mat-button href="https://www.google.com/" target="_blank">About</a>
+      <a mat-button href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">About</a>
       <div style="position: fixed; left: 1156px; top: 240px;font-size: 80px; color: #FFFF;font-family: PT Sans;">
         Carrier
         </div>
@@ -25,6 +25,57 @@
           <path id="Line_9_bhk" d="M 0 0 L 244.5 1">
           </path>
         </svg>
+
+        <!--BOX for CARRIER-->
+        <section class="Carrier_SHIP_TRANSITION2_bez">
+          <div id="Battle_SHIP_TRANSITION_be">
+            <svg class="Rectangle_4_be">
+              <rect id="Rectangle_4_be" rx="32" ry="32" x="0" y="0" width="601" height="527">
+              </rect>
+            </svg>
+            <div id="Text_BattleShip_details_be">
+              <span>Battleships have traditionally been the flagships of a <br/>given nation's navy, originating from the Age of Sail's<br/> ships-of-the-line, to World War I's dreadnoughts, to<br/> modern day battleships sporting longer ranges, higher<br/> speeds, and advanced equipment</span>
+            </div>
+            <div id="KnowMore_be">
+              <div id="Know_more_be">
+                <span>Know more</span>
+              </div>
+              <div id="Icon_feather-arrow-right_be">
+                <svg class="Path_5_be" viewBox="7.5 18 15 3">
+                  <path id="Path_5_be" d="M 7.5 18 L 22.5 18">
+                  </path>
+                </svg>
+                <svg class="Path_6_be" viewBox="18 7.5 10.5 15">
+                  <path id="Path_6_be" d="M 18 7.5 L 28.5 15 L 18 22.5">
+                  </path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div id="Text_Carrier_details_be" style="z-index: 200;">
+            <span>While the first ship-launched takeoffs, and subsequently airborne <br/>attacks, were made in the early 20th century, the then-immature <br/>development of heavier-than-air aircraft prevented them from having<br/>any major influence in World War I</span>
+          </div>
+          <div id="KnowMore_bfa">
+            <div id="Know_more_bfa">
+              <span>Know more</span>
+            </div>
+            <div id="Icon_feather-arrow-right_bfb">
+              <svg class="Path_3_bfc" viewBox="7.5 18 15 3">
+                <path id="Path_3_bfc" d="M 7.5 18 L 22.5 18">
+                </path>
+              </svg>
+              <svg class="Path_4_bfd" viewBox="18 7.5 10.5 15">
+                <path id="Path_4_bfd" d="M 18 7.5 L 28.5 15 L 18 22.5">
+                </path>
+              </svg>
+            </div>
+          </div>
+          
+          <section class="imagecarrier" style="width: 500px;height: 500px;">
+            <img src="{{image_carrier1}}" style="height: 500px;height: 500px;" alt="">
+          </section>
+        </section>
+
     </div>
 
     <div id="VersionLayer_OPTIONAL_bd">
@@ -91,67 +142,82 @@
     <!--Registration-->
     <div class="tabright">
       <mat-tab-group *ngIf="!isSignedIn" dynamicHeight style="width: 320px;">
+        <div *ngIf="!resetpass">
+          <!--SIGN IN-->
+          <mat-tab label="SIGN IN">
+            <div *ngIf="!isSignedIn" id="signin-credentials">
 
-        <!--SIGN IN-->
-        <mat-tab label="SIGN IN">
-          <div *ngIf="!isSignedIn" id="signin-credentials">
+              <!--SIGN IN: Email-->
+              <mat-form-field id="mat-form-field-signin-email" style="width: 100%;"> 
+                <mat-label style="color: #999999; font-size: 16px;">Email</mat-label>
+                <input matInput id="signin-credentials-email" type="text" style="color: #999999; font-size: 16px;" 
+                placeholder="pat@example.com" [formControl]="email" required #emailSignin/>
+                <mat-error *ngIf="email.invalid" style="font-size: 16px;">{{ getErrorMessage() }}</mat-error>
+              </mat-form-field>
 
-            <!--SIGN IN: Email-->
-            <mat-form-field id="mat-form-field-signin-email" style="width: 100%;"> 
-              <mat-label style="color: #999999; font-size: 16px;">Email</mat-label>
-              <input matInput id="signin-credentials-email" type="text" style="color: #999999; font-size: 16px;" 
-              placeholder="pat@example.com" [formControl]="email" required #emailSignin/>
-              <mat-error *ngIf="email.invalid" style="font-size: 16px;">{{ getErrorMessage() }}</mat-error>
-            </mat-form-field>
+              <!--SIGN IN: Password-->
+              <mat-form-field id="mat-form-field-signin-password" style="width: 100%;">
+                <mat-label style="color: #999999; font-size: 16px;">Enter your password</mat-label>
+                <input matInput id ="signin-credentials-password" style="color: #999999; font-size: 16px;"
+                #password [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
 
-            <!--SIGN IN: Password-->
-            <mat-form-field id="mat-form-field-signin-password" style="width: 100%;">
-              <mat-label style="color: #999999; font-size: 16px;">Enter your password</mat-label>
-              <input matInput id ="signin-credentials-password" style="color: #999999; font-size: 16px;"
-              #password [type]="hide ? 'password' : 'text'">
-              <button mat-icon-button matSuffix (click)="hide = !hide"
-              [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-              </button>
-            </mat-form-field>
-
-            <!--Router-->
-            <mat-hint allign="end">
-              <!--Functionalitate neadaugata momentan-->
-              <button mat-button style="color: #EFC862;">Reset password</button> 
-            </mat-hint>
-
-            <button (click)="onSignin(email.value,password.value)" class="signup-signin-btn">Sign in</button>
-          </div>
-          
-        </mat-tab>
-
-        <!--SIGN UP-->
-        <mat-tab label="SIGN UP"> 
-          <div *ngIf="!isSignedIn" id="signup-credentials">
-          
-            <!--SIGN UP: Email-->
-            <mat-form-field id="mat-form-field-signup-email" style="width: 100%;"> 
-              <mat-label style="color: #999999; font-size: 16px;">Email</mat-label>
-              <input matInput id="signup-credentials-email" type="text" style="color: #999999; font-size: 16px;" 
-              placeholder="pat@example.com" [formControl]="email" required #emailSignup/>
-              <mat-error *ngIf="email.invalid" style="font-size: 16px;">{{ getErrorMessage() }}</mat-error>
-            </mat-form-field>
+              <!--Router-->
             
-            <!--SIGN UP: Password-->
-            <mat-form-field id="mat-form-field-signup-password" style="width: 100%;"> 
-              <mat-label style="color: #999999; font-size: 16px;">Enter your password</mat-label>
-              <input matInput id="signup-credentials-password" type="text" style="color: #999999; font-size: 16px;" 
-              #passwordSignup required [type]="hide ? 'password' : 'text'">             
-              <button mat-icon-button matSuffix (click)="hide = !hide"
-              [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-              </button>
-            </mat-form-field>
+                <button (click)="switchToResetPassword()" mat-button style="color: #EFC862;">
+                  Reset password
+                </button> 
+                
+              <button (click)="onSignin(email.value,password.value)" class="signup-signin-btn">Sign in</button>
+            </div>
             
-            <button (click)="onSignup(emailSignup.value,passwordSignup.value)" class="signup-signin-btn">Sign up</button>
-          
+          </mat-tab>
+
+          <!--SIGN UP-->
+          <mat-tab label="SIGN UP"> 
+            <div *ngIf="!isSignedIn" id="signup-credentials">
+            
+              <!--SIGN UP: Email-->
+              <mat-form-field id="mat-form-field-signup-email" style="width: 100%;"> 
+                <mat-label style="color: #999999; font-size: 16px;">Email</mat-label>
+                <input matInput id="signup-credentials-email" type="text" style="color: #999999; font-size: 16px;" 
+                placeholder="pat@example.com" [formControl]="email" required #emailSignup/>
+                <mat-error *ngIf="email.invalid" style="font-size: 16px;">{{ getErrorMessage() }}</mat-error>
+              </mat-form-field>
+              
+              <!--SIGN UP: Password-->
+              <mat-form-field id="mat-form-field-signup-password" style="width: 100%;"> 
+                <mat-label style="color: #999999; font-size: 16px;">Enter your password</mat-label>
+                <input matInput id="signup-credentials-password" type="text" style="color: #999999; font-size: 16px;" 
+                #passwordSignup required [type]="hide ? 'password' : 'text'">             
+                <button mat-icon-button matSuffix (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon style="color: #999999;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+              
+              <button (click)="onSignup(emailSignup.value,passwordSignup.value)" class="signup-signin-btn">Sign up</button>
+            
+            </div>
+          </mat-tab>
+        </div>
+        <!--Reset password-->
+        <mat-tab *ngIf="resetpass" label="RESET PASSWORD">
+          <!--Message for reseting password-->
+          <div style="color: #FFFF; margin-top: 100px;line-height: 30px; font-size: 20px;">
+            Please enter the email address from which you want to reset the password
           </div>
+          <mat-form-field id="mat-form-field-signin-email1" style="width: 100%; margin-top: 70px;"> 
+            <mat-label style="color: #999999; font-size: 16px;">Email</mat-label>
+            <input matInput id="signin-credentials-email1" type="text" style="color: #999999; font-size: 16px;" 
+            placeholder="pat@example.com" [formControl]="email" required #emailSignin/>
+            <mat-error *ngIf="email.invalid" style="font-size: 16px;">{{ getErrorMessage() }}</mat-error>
+          </mat-form-field>
+          <button (click)="resetPassword(email.value)" style="margin-left: 20px;" class="signup-signin-btn">Send email</button>
         </mat-tab>
       </mat-tab-group>
 
@@ -161,7 +227,7 @@
           <img id="small-logo" src="../../../assets/images/small_logo.png">
           <hr class="small-logo-border">
         
-<!--vs. AI, vs. Player, Disconnect buttons-->
+ <!--vs. AI, vs. Player, Disconnect buttons-->
 
 
       <div *ngIf="!onPvpGame" style="z-index: 30; position: relative;">
@@ -203,6 +269,8 @@
         </mat-tab>
       </mat-tab-group>
     </div>
+
+    
     </section>
   </section>
   </section>

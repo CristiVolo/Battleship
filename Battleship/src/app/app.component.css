@@ -347,7 +347,7 @@ box-shadow: 0 0 30px gold;
   display: block;
 padding: 10px 20px;
 color: whitesmoke;
-background-color: transparent;
+background-color: transparent; 
 border: 10px solid whitesmoke;
   border-style: ridge;
 font-size: 2rem;
@@ -365,6 +365,20 @@ background-color:  #4A00E0;
 box-shadow: 0 0 30px #ff0099  ;
 }
 /* End of Disconnect button */
+.imagecarrier{
+  margin-left: -200px;
+  display: inline-block;
+}
+
+.Rectangle_4_be{
+  margin-left: -700px;
+  margin-top: 380px;
+  width: 200px;
+}
+
+.mat-form-field-signin-email1{
+  margin-top: 600px;
+}
 
 
   html{
