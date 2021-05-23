@@ -1,7 +1,7 @@
 <html>
 
 <!--Home-->
-<div *ngIf="onHomeTab" style="z-index: 0;">
+<div *ngIf="onHomeTab" style="z-index: 0; ">
   <section class="header-container">
   <section class="navbar">
 
@@ -15,72 +15,98 @@
       <button mat-button color="warn">Contact</button>
       <a mat-button href="https://en.wikipedia.org/wiki/Battleship_(game)" target="_blank">About</a>
       <div style="position: fixed; left: 1156px; top: 240px;font-size: 80px; color: #FFFF;font-family: PT Sans;">
-        Carrier
+        <div *ngIf="onCarrier" style="z-index: 153;">Carrier</div>
+        <div *ngIf="onBattleship" style="z-index: 154;">Battleship</div>
+        <div *ngIf="onCruiser" style="z-index: 155;">Cruiser</div>
+        <div *ngIf="onSubmarine" style="z-index: 156;">Submarine</div>
+        <div *ngIf="onDestroyer" style="z-index: 157;">Destroyer</div>
         </div>
         <svg class="Line_1_bd" viewBox="0 0 3 1079.5">
           <path id="Line_1_bd" d="M 0 0 L 0 1079.5">
           </path>
         </svg>
-        <svg class="Line_9_bhk" viewBox="0 0 244.5 1">
+        <svg class="Line_9_bhk" viewBox="0 0 244.5 1" style="height: 1px;">
           <path id="Line_9_bhk" d="M 0 0 L 244.5 1">
           </path>
         </svg>
 
-        <!--BOX for CARRIER-->
-        <section class="Carrier_SHIP_TRANSITION2_bez">
-          <div id="Battle_SHIP_TRANSITION_be">
+        <section class="Carrier_SHIP_TRANSITION2_bez" style="width: 1000px;height: 438px; margin: 250px 0 0 -520px;">
+          <div id="Battle_SHIP_TRANSITION_be" style="margin: 50px 0 0 -20px; z-index: 150; position: relatve;">
             <svg class="Rectangle_4_be">
-              <rect id="Rectangle_4_be" rx="32" ry="32" x="0" y="0" width="601" height="527">
+              <rect id="Rectangle_4_be" rx="32" ry="32" x="0" y="0" width="601" height="527" style="z-index: 150">
               </rect>
             </svg>
-            <div id="Text_BattleShip_details_be">
-              <span>Battleships have traditionally been the flagships of a <br/>given nation's navy, originating from the Age of Sail's<br/> ships-of-the-line, to World War I's dreadnoughts, to<br/> modern day battleships sporting longer ranges, higher<br/> speeds, and advanced equipment</span>
-            </div>
-            <div id="KnowMore_be">
-              <div id="Know_more_be">
-                <span>Know more</span>
-              </div>
-              <div id="Icon_feather-arrow-right_be">
-                <svg class="Path_5_be" viewBox="7.5 18 15 3">
-                  <path id="Path_5_be" d="M 7.5 18 L 22.5 18">
-                  </path>
-                </svg>
-                <svg class="Path_6_be" viewBox="18 7.5 10.5 15">
-                  <path id="Path_6_be" d="M 18 7.5 L 28.5 15 L 18 22.5">
-                  </path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div id="Text_Carrier_details_be" style="z-index: 200;">
-            <span>While the first ship-launched takeoffs, and subsequently airborne <br/>attacks, were made in the early 20th century, the then-immature <br/>development of heavier-than-air aircraft prevented them from having<br/>any major influence in World War I</span>
-          </div>
-          <div id="KnowMore_bfa">
-            <div id="Know_more_bfa">
-              <span>Know more</span>
-            </div>
-            <div id="Icon_feather-arrow-right_bfb">
-              <svg class="Path_3_bfc" viewBox="7.5 18 15 3">
-                <path id="Path_3_bfc" d="M 7.5 18 L 22.5 18">
-                </path>
-              </svg>
-              <svg class="Path_4_bfd" viewBox="18 7.5 10.5 15">
-                <path id="Path_4_bfd" d="M 18 7.5 L 28.5 15 L 18 22.5">
-                </path>
-              </svg>
-            </div>
+            <svg class="smaller_rectangle" id="smaller_rectangle1">
+              <rect rx="32" ry="32" x="0" y="0" width="401" height="327">
+              </rect>
+            </svg>
+            <svg class="smaller_rectangle" id="smaller_rectangle2">
+              <rect  rx="32" ry="32" x="0" y="0" width="401" height="327">
+              </rect>
+            </svg>
           </div>
           
-          <section class="imagecarrier" style="width: 500px;height: 500px;">
-            <img src="{{image_carrier1}}" style="height: 500px;height: 500px;" alt="">
+          <!--Big Carrier-->
+          <section *ngIf="onCarrier" class="image_carrier_big" style="width: 657px; height: 438px; z-index: 153; position: relative;  margin-left: -200px; display: inline-block;">
+            <img src="{{image_carrier_big}}" style="margin-top: 40px; margin-left: -15px; width: 657px; height: 438px;" alt="">
           </section>
+          <section *ngIf="onCarrier" class="image_battleship_small" style="width: 348px; height: 176px; z-index: 153; position: relative;  margin-left: 150px; display: inline-block;" (click)="changeToBattleship()">
+            <img src="{{image_battleship_small}}" style="margin-top: 340px; margin-left: -15px; width: 348px; height: 176px;" alt="">
+          </section>
+          <section *ngIf="onCarrier" class="image_cruiser_small" style="width: 348px; height: 210px; z-index: 153; position: relative;  margin-left: 1080px; display: inline-block;" (click)="changeToCruiser()">
+              <img src="{{image_cruiser_small}}" style="margin-top: -130px; margin-left: -15px; width: 348px; height: 210px;" alt="">
+            </section>
         </section>
+
+        <!--Big Battleship-->
+         <section *ngIf="onBattleship" class="image_battleship_big" style="width: 627px; height: 408px; z-index: 154; position: relative;  margin-left: -690px; display: inline-block;">
+            <img src="{{image_battleship_big}}" style="margin-top: -350px; margin-left: -15px; width: 627px; height: 408px;" alt="">
+          </section>
+          <section *ngIf="onBattleship" class="image_cruiser_small" style="width: 348px; height: 176px; z-index: 154; position: relative;  margin-left: 150px; display: inline-block;" (click)="changeToCruiser()">
+            <img src="{{image_cruiser_small}}" style="margin-top: -100px; margin-left: -15px; width: 348px; height: 176px;" alt="">
+          </section>
+          <section *ngIf="onBattleship" class="image_submarine_small" style="width: 348px; height: 210px; z-index: 154; position: relative;  margin-left: 100px; display: inline-block;" (click)="changeToSubmarine()">
+              <img src="{{image_submarine_small}}" style="margin-top: -120px; margin-left: -15px; width: 348px; height: 210px;" alt="">
+            </section>
+
+        <!--Big Cruiser-->
+        <section *ngIf="onCruiser" class="image_cruiser_big" style="width: 657px; height: 438px; z-index: 155; position: relative;  margin-left: -670px; display: inline-block;">
+            <img src="{{image_cruiser_big}}" style="margin-top: -300px; margin-left: -15px; width: 607px; height: 388px;" alt="">
+          </section>
+          <section *ngIf="onCruiser" class="image_submarine_small" style="width: 348px; height: 176px; z-index: 155; position: relative;  margin-left: 70px; display: inline-block;" (click)="changeToSubmarine()">
+            <img src="{{image_submarine_small}}" style="margin-top: -110px; margin-left: -15px; width: 348px; height: 176px;" alt="">
+          </section>
+          <section *ngIf="onCruiser" class="image_destroyer_small" style="width: 348px; height: 210px; z-index: 155; position: relative;  margin-left: 140px; display: inline-block;" (click)="changeToDestroyer()">
+              <img src="{{image_destroyer_small}}" style="margin-top: -130px; margin-left: -15px; width: 348px; height: 210px;" alt="">
+            </section>
+
+        <!--Big Submarine-->
+        <section *ngIf="onSubmarine" class="image_submarine_big" style="width: 657px; height: 438px; z-index: 156; position: relative;  margin-left: -730px; display: inline-block;">
+            <img src="{{image_submarine_big}}" style="margin-top: -350px; margin-left: -15px; width: 657px; height: 438px;" alt="">
+          </section>
+          <section *ngIf="onSubmarine" class="image_destroyer_small" style="width: 348px; height: 176px; z-index: 156; position: relative;  margin-left: 150px; display: inline-block;" (click)="changeToDestroyer()">
+            <img src="{{image_destroyer_small}}" style="margin-top: -110px; margin-left: -15px; width: 348px; height: 176px;" alt="">
+          </section>
+          <section *ngIf="onSubmarine" class="image_carrier_small" style="width: 348px; height: 210px; z-index: 156; position: relative;  margin-left: 120px; display: inline-block;" (click)="changeToCarrier()">
+              <img src="{{image_carrier_small}}" style="margin-top: -130px; margin-left: -15px; width: 348px; height: 210px;" alt="">
+            </section>
+
+        <!--Big Destroyer-->
+        <section *ngIf="onDestroyer" class="image_destroyer_big" style="width: 657px; height: 438px; z-index: 157; position: relative;  margin-left: -700px; display: inline-block;">
+            <img src="{{image_destroyer_big}}" style="margin-top: -400px; margin-left: -15px; width: 657px; height: 438px;" alt="">
+          </section>
+          <section *ngIf="onDestroyer" class="image_carrier_small" style="width: 348px; height: 176px; z-index: 157; position: relative;  margin-left: 120px; display: inline-block;" (click)="changeToCarrier()">
+            <img src="{{image_carrier_small}}" style="margin-top: -150px; margin-left: -15px; width: 348px; height: 176px;" alt="">
+          </section>
+          <section *ngIf="onDestroyer" class="image_battleship_small" style="width: 348px; height: 210px; z-index: 157; position: relative;  margin-left: 130px; display: inline-block;" (click)="changeToBattleship()">
+              <img src="{{image_battleship_small}}" style="margin-top: -130px; margin-left: -15px; width: 348px; height: 210px;" alt="">
+            </section>
 
     </div>
 
     <div id="VersionLayer_OPTIONAL_bd">
       <div id="ID01_bed">
-        <span>/01</span>
+        <span>{{slashNumber}}</span>
       </div>
       <svg class="Line_3_bea" viewBox="0 0 278 1">
         <path id="Line_3_bea" d="M 0 0 L 278 1">
@@ -90,18 +116,12 @@
         <path id="Line_4_beb" d="M 0 0 L 7.5 0">
         </path>
       </svg>
-      <div id="The_seagoing_airbase_bec">
-        <span>The seagoing aribase</span>
-      </div>
-      <div id="ID01_bed">
-        <span>/01</span>
-      </div>
       <svg class="Line_7_bee" viewBox="0 0 278 1">
         <path id="Line_7_bee" d="M 0 0 L 278 1">
         </path>
       </svg>
-      <svg class="Line_8_bef" viewBox="0 0 7.5 1">
-        <path id="Line_8_bef" d="M 0 0 L 7.5 0">
+      <svg class="Line_8_bef" viewBox="0 0 10 1">
+        <path id="Line_8_bef" d="M 0 0 L 10 0">
         </path>
       </svg>
     </div>

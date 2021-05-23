@@ -248,7 +248,7 @@
 .Line_8_bef {
     overflow: visible;
     position: absolute;
-    width: 7.5px;
+    width: 10px;
     height: 1px;
     left: 0px;
     top: 32.5px;
@@ -538,6 +538,28 @@
     height: 435.5px;
     left: 0px;
     top: 0px;
+}
+#smaller_rectangle1 {
+}
+#smaller_rectangle2 {
+    left: 500px !important;
+}
+.smaller_rectangle {
+    filter: drop-shadow(14px 100px 29px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 254px;
+    height: 235.5px;
+    left: 20px;
+    top: 580px;
+    opacity: 0.8;
+    fill: rgba(244,248,247,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
 }
 #Text_BattleShip_details_be {
     opacity: 0;
