@@ -1,132 +1,139 @@
 #player-status-box {
-    margin: 100px 0 0 -1150px;
-    height: 400px;
-    width: 400px;
-  }
-  #player-status-box-card {
-    background: linear-gradient(to bottom, #efefbb
-    100%, #d4d3dd 100%);
-    color: #283048;
-    font-weight: bold;
-    vertical-align: middle;
-    font-family: Source Han Sans JP, serif;
-  }
-  #match-status-grid-list .mat-grid-tile{
-    height: 20px;
-    color: #283048; 
-  }
-
-  .Line_1_bd{
-    margin-left: 520px;
-    margin-top: 0px;
-    display: inline-block;
-  }
-
-  .rotate_button{
-    width: 200px;
-    height: 200px;
-  }
-  
-.rotate_icon{
-  font-size: 200px;
+  margin: 100px 0 0 -1150px;
+  height: 400px;
+  width: 400px;
 }
-
-#tutorial-thegrid-content {
-  margin-top: -50px;
+#selection-grid {
+  float:inline;
+  margin-top: -900px;
   margin-left: 700px;
 }
 #grid {
   width: 900px;
-  height: 900px;
-  background: white;
 }
 #grid .mat-grid-tile {
   background: white;
 }
 #grid .grid-head {
   font-weight: 900;
-  font-size: 360%;
+  font-size: 150%;
 }
 
+#player-status-box-card {
+  background: linear-gradient(to bottom, #efefbb
+  100%, #d4d3dd 100%);
+  color: #283048;
+  font-weight: bold;
+  vertical-align: middle;
+  font-family: Source Han Sans JP, serif;
+}
+#match-status-grid-list .mat-grid-tile{
+  height: 20px;
+  color: #283048; 
+}
+
+.Line_1_bd{
+  margin-left: 520px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+.rotate_button{
+  width: 200px;
+  height: 200px;
+}
+
+.rotate_icon{
+font-size: 200px;
+}
+
+
 #start-btn {
-  margin-left: 330px !important;
-  width: 170px ;
-  margin-top: -790px !important;
-  display: block;
-  padding: 10px 20px;
-  color: whitesmoke;
-  background-color: transparent;
-  border: 10px solid whitesmoke;
-  border-style: ridge;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  transition: .3s ease;
-  transition-property: background-color, color;
-  text-transform: uppercase;
+margin-left: 330px !important;
+width: 170px ;
+margin-top: 150px !important;
+display: block;
+padding: 10px 20px;
+color: whitesmoke;
+background-color: transparent;
+border: 10px solid whitesmoke;
+border-style: ridge;
+font-size: 2rem;
+text-transform: uppercase;
+letter-spacing: .1rem;
+transition: .3s ease;
+transition-property: background-color, color;
+text-transform: uppercase;
 }
 #start-btn:hover {
-  border: 10px solid #00416a;
-  color: gold;
-  background-color:  #00416a;  ;
-  box-shadow: 0 0 30px gold;
+border: 10px solid #00416a;
+color: gold;
+background-color:  #00416a;  ;
+box-shadow: 0 0 30px gold;
 }
 /* End of Player vs. AI button */
 
 /* Player vs. Player button */
 #start-btn {
-  margin-left: -1130px;
-  margin-top: 100px;
-  display: block;
-  padding: 10px 20px;
-  color: whitesmoke;
-  background-color: transparent;
-  border: 10px solid whitesmoke;
-  border-style: ridge;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  transition: .3s ease;
-  transition-property: background-color, color;
-  text-transform: uppercase;
+margin-left: -1130px;
+margin-top: 100px;
+display: block;
+padding: 10px 20px;
+color: whitesmoke;
+background-color: transparent;
+border: 10px solid whitesmoke;
+border-style: ridge;
+font-size: 2rem;
+text-transform: uppercase;
+letter-spacing: .1rem;
+transition: .3s ease;
+transition-property: background-color, color;
+text-transform: uppercase;
 }
 #start-btn:hover {
-  border: 10px solid #00416a;
-  color: gold;
-  background-color:  #00416a;  ;
-  box-shadow: 0 0 30px gold;
+border: 10px solid #00416a;
+color: gold;
+background-color:  #00416a;  ;
+box-shadow: 0 0 30px gold;
 }
 
+.shipImage{
+-webkit-transform:rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+}
 /* Size of a square: 83px * 81.81px */
 .drag-ships{
-  height: 800px;
-  width: 520px;
-  z-index: 100;
-  margin-top: 50px;
-  background-color: transparent;
-}
-.draggable-ship div{
-  width: 81.81px; 
-  height: 81.81px;
-  background-color: orangered !important;
+height: 800px;
+width: 520px;
+z-index: 100;
+margin-top: 50px;
+background-color: transparent;
 }
 .carrier-container {
-  display: flex;
-  margin: 10px;
+display: flex;
+margin-left: 150px;
+margin-top: -200px;
 }
 .battleship-container {
-  display: flex;
-  margin: 10px;
+display: flex;
+margin-left: 150px;
+margin-top: -400px;
 }
 .cruiser-container {
-  display: flex;
-  margin: 10px;
+display: flex;
+margin-left: 150px;
+margin-top: -300px;
 }
 .submarine-container {
-  display: flex;
-  margin: 10px;
+display: flex;
+margin-left: 150px;
+margin-top: -270px;
 }
 .destroyer-container {
-  display: flex;
-  margin: 10px;
+display: flex;
+margin-left: 150px;
+margin-top: -230px;
 }
