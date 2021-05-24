@@ -19,36 +19,178 @@
     </div>
   </div>
 
-  <button id="start-btn">START</button>
+  <button id="start-btn" style="margin-top: 900px; margin-left: 400px;">START</button>
 
   <div class="drag-ships">
-    <div class="draggable-ship carrier-container" draggable="true">
-      <div id="carrier-0"></div>
+    <div class="carrier-container" draggable="true">
+      <img class="shipImage" src="{{image_carrier}}">
+      <!--<div id="carrier-0"></div>
       <div id="carrier-1"></div>
       <div id="carrier-2"></div>
       <div id="carrier-3"></div>
-      <div id="carrier-4"></div>
+      <div id="carrier-4"></div>-->
     </div>
-    <div class="draggable-ship battleship-container" draggable="true">
-      <div id="battleship-0"></div>
+    <div class="shipImage" class="battleship-container" draggable="true">  
+      <img class="shipImage" src="{{image_battleship}}">
+      <!--<div id="battleship-0"></div>
       <div id="battleship-1"></div>
       <div id="battleship-2"></div>
-      <div id="battleship-3"></div>
+      <div id="battleship-3"></div>-->
     </div>
-    <div class="draggable-ship cruiser-container" draggable="true">
-      <div id="cruiser-0"></div>
+    <div class="shipImage" class="cruiser-container" draggable="true">
+      <img class="shipImage" src="{{image_cruiser}}">
+      <!--<div id="cruiser-0"></div>
       <div id="cruiser-1"></div>
-      <div id="cruiser-2"></div>
+      <div id="cruiser-2"></div>-->
     </div>
-    <div class="draggable-ship submarine-container" draggable="true">
-      <div id="submarine-0"></div>
-      <div id="submarine-1"></div>
+    <div class="shipImage" class="submarine-container" draggable="true">
+      <img class="shipImage" src="{{image_submarine}}">
+     <!-- <div id="submarine-0"></div>
+      <div id="submarine-1"></div>-->
     </div>
-    <div class="draggable-ship destroyer-container" draggable="true">
-      <div id="destroyer-0"></div>
-      <div id="destroyer-1"></div>
+    <div class="shipImage" class="destroyer-container" draggable="true">
+      <img class="shipImage" src="{{image_destroyer}}">
+      <!--<div id="destroyer-0"></div>
+      <div id="destroyer-1"></div>-->
     </div>
   </div>
-
+  <!--Content for each button-->
+<div id="selection-grid" style="z-index: 500px;">
+  <!--The grid itself-->
+  <mat-grid-list id="grid" cols="11" rowHeight="81px">
+    <!--1st row-->
+    <mat-grid-tile></mat-grid-tile>  
+    <mat-grid-tile><span class="grid-head">A</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">B</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">C</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">D</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">E</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">F</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">G</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">H</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">I</span></mat-grid-tile>
+    <mat-grid-tile><span class="grid-head">J</span></mat-grid-tile>
+    <!--2nd row-->
+    <mat-grid-tile><span class="grid-head">1</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--3rd row-->
+    <mat-grid-tile><span class="grid-head">2</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--4th row-->
+    <mat-grid-tile><span class="grid-head">3</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--5th row-->
+    <mat-grid-tile><span class="grid-head">4</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--6th row-->
+    <mat-grid-tile><span class="grid-head">5</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--7th row-->
+    <mat-grid-tile><span class="grid-head">6</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--8th row-->
+    <mat-grid-tile><span class="grid-head">7</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--9th row-->
+    <mat-grid-tile><span class="grid-head">8</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--10th row-->
+    <mat-grid-tile><span class="grid-head">9</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <!--11th row-->
+    <mat-grid-tile><span class="grid-head">10</span></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+  </mat-grid-list>
+</div>
 
 </html>

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const startButton = document.querySelector('#start-btn')
   const rotateButton = document.querySelector('#rotate_button')
   const playerSquares: HTMLDivElement[] = []
+  
 
 
   const width = 10
@@ -35,6 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 export class PlayervsplayerComponent implements OnInit {
 
+  image_carrier:string="/assets/images/Carrier-IMG.png";
+  image_battleship:string="/assets/images/Battleship-IMG.png";
+  image_cruiser:string="/assets/images/Cruiser-IMG.png";
+  image_submarine:string="/assets/images/Submarine-IMG.png";
+  image_destroyer:string="/assets/images/Destroyer-IMG.png";
 
   constructor() { }
 
