@@ -27,7 +27,21 @@ import { identifierName, Identifiers } from '@angular/compiler';
 })
 export class AppComponent implements OnInit{
   logo:string ="assets/images/imageedit_19_3329358286_i.png";
-  image_carrier1:string="/assets/images/Carrier_dim5_image_bfz";
+  image_carrier_big:string="/assets/images/Carrier_dim5_image_bfz.png";
+  image_carrier_small:string="/assets/images/Carrier_dim5_image.png";
+
+  image_battleship_big:string="/assets/images/Battleship_dim4_z.png";
+  image_battleship_small:string="/assets/images/Battleship_dim4_t.png";
+
+  image_cruiser_big:string="/assets/images/Cruiser_dim3_m.png";
+  image_cruiser_small:string="/assets/images/Cruiser_dim3_nd.png";
+
+  image_submarine_big:string="/assets/images/Submarine_dim3_.png";
+  image_submarine_small:string="/assets/images/Submarine_dim3_wj.png";
+
+  image_destroyer_big:string="/assets/images/Destroyer_dim2_wa.png";
+  image_destroyer_small:string="/assets/images/Destroyer_dim2_x.png";
+
   title = 'Battleship';
   user = "";
   email_field = "";
@@ -42,8 +56,17 @@ export class AppComponent implements OnInit{
   onLeaderboardTab = false
   onContactTab = false
   onAboutTab = false
-  onPvpGame=false;
-  resetpass=false;
+  onPvpGame=false
+  resetpass=false
+
+  // Check what ship images will apear
+  onCarrier = true
+  onBattleship = false
+  onCruiser = false
+  onSubmarine = false
+  onDestroyer = false
+
+  slashNumber:string = "/01"
 
   // Tab switch methods
   switchToHome() {
@@ -91,6 +114,7 @@ export class AppComponent implements OnInit{
   
 
   ngOnInit(){
+    //this.initialAuthStatus = this.authenticationStatus;
 
     this.SignUpForm=new FormGroup({
       'password': new FormControl(null, [Validators.required, Validators.minLength(4)])
@@ -123,9 +147,8 @@ export class AppComponent implements OnInit{
       this.email_field = email
     }
   }
-  //Te fut in gura sorine
   //handleLogout(){
-  //  this.isSignedIn = false
+  //  this.isSignedIn = falseinvalid
   //  this.email_field = ""
   //}
   hide = true;
@@ -137,16 +160,56 @@ export class AppComponent implements OnInit{
     }
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
-
   resetPassword(email:string){
-  
-    this.resetpass=false;
-    return firebase.default.auth().sendPasswordResetEmail(email)
-    .then(() => console.log("We've sent you a password reset link"))
-    .catch(error => console.log(error.message))
-    
+    if (!this.email.invalid) {
+      this.resetpass=false;
+      return firebase.default.auth().sendPasswordResetEmail(email)
+      .then(() => console.log("We've sent you a password reset link"))
+      .catch(error => console.log(error.message))
+    }
+    else return
   }
 
+  changeToCarrier(){
+    this.onCarrier = true
+    this.onBattleship = false
+    this.onCruiser = false
+    this.onSubmarine = false
+    this.onDestroyer = false
+    this.slashNumber = "/01"
+  }
+  changeToBattleship(){
+    this.onCarrier = false
+    this.onBattleship = true
+    this.onCruiser = false
+    this.onSubmarine = false
+    this.onDestroyer = false
+    this.slashNumber = "/02"
+  }
+  changeToCruiser(){
+    this.onCarrier = false
+    this.onBattleship = false
+    this.onCruiser = true
+    this.onSubmarine = false
+    this.onDestroyer = false
+    this.slashNumber = "/03"
+  }
+  changeToSubmarine(){
+    this.onCarrier = false
+    this.onBattleship = false
+    this.onCruiser = false
+    this.onSubmarine = true
+    this.onDestroyer = false
+    this.slashNumber = "/04"
+  }
+  changeToDestroyer(){
+    this.onCarrier = false
+    this.onBattleship = false
+    this.onCruiser = false
+    this.onSubmarine = false
+    this.onDestroyer = true
+    this.slashNumber = "/05"
+  }
 /*
   tabClick(tab:MatTabChangeEvent){
       if(tab.tab.textLabel=="SIGN UP"){
